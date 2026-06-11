@@ -1,0 +1,208 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(245, 241, 232, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(221, 216, 204, 0.5);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(44, 61, 46, 0.1);
+  border-bottom-color: var(--border);
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoIcon {
+  flex-shrink: 0;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logoMain {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 16px;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+}
+
+.logoBold {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 16px;
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: -2px;
+}
+
+.logoSub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+
+/* Nav Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--text-body);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--text-dark);
+  background: rgba(44, 61, 46, 0.06);
+}
+
+.navLink.active {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: var(--forest);
+  border-radius: 1px;
+}
+
+/* CTA Button */
+.ctaBtn {
+  flex-shrink: 0;
+  background: var(--forest);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 9px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ctaBtn:hover {
+  background: var(--forest-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(44, 61, 46, 0.25);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  padding: 16px 20px 24px;
+  background: var(--cream);
+  border-top: 1px solid var(--border);
+  gap: 4px;
+}
+
+.mobileLink {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text-body);
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mobileLink:hover, .mobileLinkActive {
+  background: rgba(44, 61, 46, 0.08);
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.mobileCta {
+  margin-top: 12px;
+  background: var(--forest);
+  color: var(--white);
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .navLinks {
+    display: none;
+  }
+  .ctaBtn {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+}

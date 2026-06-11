@@ -1,0 +1,560 @@
+/* ===================== HERO ===================== */
+.hero {
+  padding-top: 100px;
+  background: var(--cream);
+  min-height: 90vh;
+}
+
+.heroContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px clamp(20px, 4vw, 60px) 80px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 80px;
+  align-items: center;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroTitle {
+  font-size: 52px;
+  line-height: 1.1;
+  color: var(--text-dark);
+  margin-top: 8px;
+  max-width: 500px;
+}
+
+.goldStar {
+  color: var(--gold);
+  font-size: 28px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.heroDesc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+.statsRow {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.miniStat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.miniStatIcon {
+  font-size: 20px;
+}
+
+.miniStatNum {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 26px;
+  color: var(--pink);
+  line-height: 1;
+}
+
+.miniStatLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Hero Right - Trophy Display */
+.heroRight {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.trophiesDisplay {
+  width: 100%;
+}
+
+.trophiesImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.trophyBg {
+  background: linear-gradient(135deg, #f0ece2 0%, #e8e3d8 100%);
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: 1px solid var(--border);
+}
+
+.trophyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trophyMain {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate {
+  background: white;
+  border: 2px solid #E8D8A0;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.certTitle {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+.certLine {
+  height: 1px;
+  background: #E8D8A0;
+  margin: 4px 0;
+}
+
+.certText {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.certName {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.certDesc {
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.certSeal {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.trophyIcons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.trophyItem {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trophyIcon {
+  font-size: 28px;
+}
+
+.trophyLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ===================== RECOGNITIONS ===================== */
+.recognitions {
+  background: var(--white);
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.recTag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.recGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recCard {
+  width: calc(33.333% - 14px);
+  min-width: 260px;
+  max-width: 340px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.25s ease;
+  background: var(--white);
+}
+
+.recCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.recCardTop {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.recImg {
+  max-width: 100%;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+.recName {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.recBadge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--cream-dark);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 7px;
+  color: var(--text-muted);
+  align-self: flex-start;
+}
+
+.recDesc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.recYear {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.recCta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===================== MEDIA ===================== */
+.media {
+  background: var(--cream);
+  padding: 80px 0;
+}
+
+.mediaSubTag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.mediaTitle {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.mediaGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.mediaCard {
+  width: calc(25% - 12px);
+  min-width: 240px;
+  max-width: 300px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 16px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.mediaCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.outletTop {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.mediaImg {
+  max-width: 100%;
+  max-height: 24px;
+  object-fit: contain;
+}
+
+.mediaType {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.mediaHeadline {
+  font-size: 12.5px;
+  color: var(--text-dark);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.mediaDate {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.mediaCta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===================== MILESTONES ===================== */
+.milestones {
+  background: var(--cream-dark);
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.milestoneTag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.milestoneTrack {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.milestoneLine {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  right: 28px;
+  height: 1.5px;
+  background: var(--border);
+}
+
+.milestoneItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.milestoneDot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.milestoneIcon {
+  font-size: 22px;
+}
+
+.milestoneYear {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.milestoneEvent {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.milestoneDesc {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ===================== QUOTE BANNER ===================== */
+.quoteBanner {
+  background: var(--forest);
+  padding: 60px 0;
+}
+
+.quoteGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.quoteLeft {
+  border-right: 1px solid rgba(255,255,255,0.15);
+  padding-right: 60px;
+}
+
+.quoteMark {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 64px;
+  color: rgba(255,255,255,0.25);
+  line-height: 0.8;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.quoteTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 28px;
+  color: var(--white);
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.quoteDesc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+.quoteRight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.quoteRightItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.quoteItemIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.quoteItemLabel {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
+
+/* Bottom Strip */
+.bottomStrip {
+  background: var(--cream-dark);
+  border-top: 1px solid var(--border);
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.sep { opacity: 0.4; }
+
+.goldStar2 {
+  color: var(--gold);
+  font-size: 12px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+  .heroContent { grid-template-columns: 1fr; }
+  .heroRight { display: none; }
+  .recGrid { grid-template-columns: repeat(3, 1fr); }
+  .mediaGrid { grid-template-columns: repeat(3, 1fr); }
+  .milestoneTrack { grid-template-columns: repeat(3, 1fr); }
+  .milestoneLine { display: none; }
+  .quoteGrid { grid-template-columns: 1fr; }
+  .quoteLeft { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 40px; }
+  .quoteRight { justify-items: center; }
+}
+
+@media (max-width: 768px) {
+  .heroTitle { font-size: 36px; }
+  .recGrid { grid-template-columns: repeat(2, 1fr); }
+  .mediaGrid { grid-template-columns: repeat(2, 1fr); }
+  .milestoneTrack { grid-template-columns: repeat(2, 1fr); }
+  .quoteRight { grid-template-columns: 1fr; }
+}
