@@ -161,16 +161,17 @@ export default function HomePage() {
                 Snowflake by EarthImpact is a science-backed, plastic-free and biodegradable sanitary pad made with innovative, non-toxic materials for complete protection and peace of mind.
               </p>
 
-              <div className={styles.solutionFeatures}>
+              <div className={styles.solutionFeaturesList}>
                 {[
-                  { icon: '🌿', title: 'Endocrine-Safe & Non-Toxic' },
-                  { icon: '💧', title: 'High Absorbency & Leak Protection' },
-                  { icon: '🌾', title: 'Anti-Fungal & Anti-Microbial' },
-                  { icon: '♻️', title: 'Biodegradable & Compostable' },
+                  { icon: '🌿', title: 'Eco-friendly' },
+                  { icon: '🧪', title: 'HemoStatic & Chemical Free' },
+                  { icon: '💧', title: 'High Absorbency' },
+                  { icon: '♻️', title: 'Biodegradable' },
+                  { icon: '🛡️', title: 'Anti-fungal & Non-carcinogenic' },
                 ].map(({ icon, title }) => (
-                  <div key={title} className={styles.solutionFeature}>
-                    <span className={styles.solutionFeatureIcon}>{icon}</span>
-                    <span className={styles.solutionFeatureText}>{title}</span>
+                  <div key={title} className={styles.solutionFeatureRow}>
+                    <span className={styles.solutionFeatureRowIcon}>{icon}</span>
+                    <span className={styles.solutionFeatureRowText}>{title}</span>
                   </div>
                 ))}
               </div>
@@ -180,40 +181,15 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Pad layers illustration */}
-            <div className={styles.solutionCenter}>
-              <div className={styles.padLayers}>
-                {[
-                  { label: 'Novel Biodegradable Top-Sheet', w: 200 },
-                  { label: 'HemoSan® & Water Hyacinth Blend Absorbent Core', w: 185 },
-                  { label: 'Novel Plastic-Free Leak Barrier', w: 170 },
-                  { label: 'Plant-Based Adhesive Layer', w: 155 },
-                  { label: 'Cotton Anti-Bacterial Back Sheet', w: 145 },
-                ].map(({ label, w }, i) => (
-                  <div key={i} className={styles.padLayer} style={{ '--layer-w': `${w}px` }}>
-                    <div className={styles.padLayerShape}></div>
-                    <span className={styles.padLayerLabel}>{label}</span>
-                  </div>
-                ))}
+            {/* Single SVG Image Diagram */}
+            <div className={styles.interactivePadWrapper}>
+              <div className={styles.svgContainer}>
+                <img src="/images/products/pad-diagram.png" alt="Our Solution - Pad Layer Diagram" className={styles.solutionDiagramImage} />
               </div>
-              <div className={styles.hydrogel}>
-                <span>⚗️</span>
-                <div>
-                  <p className={styles.hydrogelSub}>Powered by our proprietary</p>
-                  <p className={styles.hydrogelName}>Hydrogel "HemoSan"</p>
-                </div>
-              </div>
-            </div>
 
-            <div className={styles.solutionRight}>
-              <p className={styles.solutionRightTag}>MADE WITH INNOVATION, ROOTED IN NATURE</p>
-              <ul className={styles.layersList}>
-                <li>Novel Biodegradable Top-Sheet</li>
-                <li>HemoSan® &amp; Water Hyacinth Blend Absorbent Core</li>
-                <li>Novel Plastic-Free Leak Barrier</li>
-                <li>Plant-Based Adhesive Layer</li>
-                <li>Cotton Anti-Bacterial Back Sheet</li>
-              </ul>
+              <div className={styles.innovationBanner}>
+                <span className={styles.innovationText}>Innovation: Our proprietary Hydrogel "HemoSan"</span>
+              </div>
             </div>
           </div>
         </div>

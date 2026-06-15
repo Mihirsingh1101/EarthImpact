@@ -9,15 +9,32 @@ export default function ContactPage() {
     name: '', email: '', org: '', subject: '', message: '', updates: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactTypes = [
@@ -146,9 +163,14 @@ export default function ContactPage() {
                     />
                     <span className={styles.checkboxLabel}>I'd like to receive updates from EarthImpact.</span>
                   </label>
-                  <button type="submit" className={styles.submitBtn}>
-                    Send Message
-                    <span>📨</span>
+                  {error && (
+                    <div className={styles.errorMsg}>
+                      ⚠️ {error}
+                    </div>
+                  )}
+                  <button type="submit" className={styles.submitBtn} disabled={loading}>
+                    {loading ? 'Sending...' : 'Send Message'}
+                    <span>{loading ? '⏳' : '📨'}</span>
                   </button>
                 </form>
               </>

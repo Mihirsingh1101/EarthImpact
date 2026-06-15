@@ -3,8 +3,14 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Snowflake Cares – Care for Her. Care for the Planet. | EarthImpact',
-  description: 'Snowflake is our mission-driven brand dedicated to redesigning menstrual care—making it safe for every woman and gentle on the environment.',
+  title: 'Snowflakes Pads – Non-Toxic Menstrual Care | EarthImpact',
+  description: 'Snowflakes is our mission-driven brand by EarthImpact dedicated to redesigning menstrual care—making it safe, non-toxic, and biodegradable.',
+  keywords: ['Snowflakes', 'Snowflakes Pads', 'Non-toxic Sanitary Pads', 'Biodegradable Menstrual Pads', 'EarthImpact Snowflakes'],
+  openGraph: {
+    title: 'Snowflakes Pads – Non-Toxic Menstrual Care',
+    description: 'Snowflakes: Safe for every woman and gentle on the environment. Biodegradable and non-toxic pads by EarthImpact.',
+    url: 'https://earthimpact.co.in/snowflake-cares',
+  }
 };
 
 const whatMakesSnowflakeDifferent = [
@@ -19,6 +25,25 @@ const whatMakesSnowflakeDifferent = [
 export default function SnowflakeCaresPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Snowflakes Menstrual Pads",
+            "description": "Non-toxic, endocrine-safe, and biodegradable menstrual pads.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Snowflakes"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "EarthImpact Innovations Pvt. Ltd."
+            }
+          })
+        }}
+      />
       {/* ===================== HERO ===================== */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>

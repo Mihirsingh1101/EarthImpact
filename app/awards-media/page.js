@@ -81,16 +81,6 @@ export default function AwardsMediaPage() {
               ))}
             </div>
           </div>
-
-          <div className={styles.heroRight}>
-            <div className={styles.trophiesDisplay}>
-              <img
-                src="/images/awards/trophies.png"
-                alt="EarthImpact awards, trophies and certificate of recognition"
-                className={styles.trophiesImg}
-              />
-            </div>
-          </div>
         </div>
       </section>
 

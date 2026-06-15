@@ -3,8 +3,14 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Our Story – EarthImpact Innovations',
-  description: 'EarthImpact was born from a real-life experience that opened our eyes to a hidden crisis in menstrual care.',
+  title: 'Our Story & Founder Soham Srivastav | EarthImpact Innovations',
+  description: 'Learn about the EarthImpact story and our founder Soham Srivastav. We are building safe, non-toxic, and sustainable menstrual care solutions.',
+  keywords: ['Soham Srivastav', 'Soham Srivastav EarthImpact', 'EarthImpact Founder', 'Menstrual Health Innovator', 'Snowflakes Founder'],
+  openGraph: {
+    title: 'Our Story & Founder Soham Srivastav | EarthImpact',
+    description: 'Learn about the EarthImpact story and our founder Soham Srivastav.',
+    url: 'https://earthimpact.co.in/our-story',
+  }
 };
 
 const timelineItems = [
@@ -49,6 +55,23 @@ const timelineItems = [
 export default function OurStoryPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Soham Srivastav",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "EarthImpact Innovations Pvt. Ltd."
+            },
+            "url": "https://earthimpact.co.in/our-story",
+            "description": "Founder of EarthImpact Innovations, focusing on safe, non-toxic, and sustainable menstrual care."
+          })
+        }}
+      />
       {/* ===================== HERO ===================== */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
