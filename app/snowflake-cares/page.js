@@ -3,13 +3,19 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Snowflakes Pads – Non-Toxic Menstrual Care | EarthImpact',
-  description: 'Snowflakes is our mission-driven brand by EarthImpact dedicated to redesigning menstrual care—making it safe, non-toxic, and biodegradable.',
-  keywords: ['Snowflakes', 'Snowflakes Pads', 'Non-toxic Sanitary Pads', 'Biodegradable Menstrual Pads', 'EarthImpact Snowflakes'],
+  title: 'Snowflakes – India\'s Safest Biodegradable Sanitary Pad | EarthImpact',
+  description: 'Snowflakes by EarthImpact is India\'s first HemoSan-powered, plastic-free, biodegradable sanitary pad. Non-toxic, endocrine-safe, anti-bacterial and compostable. Safe for women, safe for the planet.',
+  keywords: [
+    'Snowflakes pad', 'Snowflakes sanitary pad India', 'biodegradable sanitary pad',
+    'non-toxic sanitary pad India', 'plastic-free period pad', 'HemoSan pad',
+    'organic menstrual pad India', 'eco-friendly sanitary pad', 'EarthImpact Snowflakes'
+  ],
+  alternates: { canonical: 'https://earthimpact.co.in/snowflake-cares' },
   openGraph: {
-    title: 'Snowflakes Pads – Non-Toxic Menstrual Care',
-    description: 'Snowflakes: Safe for every woman and gentle on the environment. Biodegradable and non-toxic pads by EarthImpact.',
+    title: 'Snowflakes – India\'s Safest Biodegradable Sanitary Pad',
+    description: 'Snowflakes: HemoSan-powered, plastic-free, biodegradable sanitary pads by EarthImpact Innovations. Safe for every woman.',
     url: 'https://earthimpact.co.in/snowflake-cares',
+    images: [{ url: 'https://earthimpact.co.in/images/products/pad-product.png', alt: 'Snowflakes Biodegradable Sanitary Pad' }],
   }
 };
 

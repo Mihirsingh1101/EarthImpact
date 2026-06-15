@@ -3,8 +3,19 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Awards & Media – Recognized Today, Creating Impact for Tomorrow | EarthImpact',
-  description: 'EarthImpact\'s journey of innovation and impact has been recognized by leading organizations, media platforms, and changemakers.',
+  title: 'Awards & Recognition – EarthImpact Innovations | UNICEF, IIT, STPI',
+  description: 'EarthImpact Innovations recognized by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar, STPI, and UnLtd India for innovation in biodegradable menstrual health and women\'s safety.',
+  keywords: [
+    'EarthImpact awards', 'UNICEF India startup', 'AIC IIT Kottayam incubated',
+    'IIT Bhubaneswar startup', 'STPI recognized', 'UnLtd India social entrepreneur',
+    'menstrual health award India', 'Soham Srivastava awards'
+  ],
+  alternates: { canonical: 'https://earthimpact.co.in/awards-media' },
+  openGraph: {
+    title: 'Awards & Recognition – EarthImpact Innovations',
+    description: 'Recognized by UNICEF India, IIT Bhubaneswar, STPI and AIC IIT Kottayam for innovation in women\'s health.',
+    url: 'https://earthimpact.co.in/awards-media',
+  }
 };
 
 const recognitions = [

@@ -3,8 +3,19 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Ecosystem Support – Stronger Together | EarthImpact',
-  description: 'EarthImpact is proud to be supported by leading incubators, innovators, and government bodies who believe in our mission.',
+  title: 'Ecosystem Support – UNICEF, IIT Bhubaneswar & Incubators | EarthImpact',
+  description: 'EarthImpact Innovations is backed by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar Research Park, STPI Bhubaneswar, and UnLtd India. Building a strong ecosystem for sustainable menstrual health innovation.',
+  keywords: [
+    'EarthImpact ecosystem', 'UNICEF India', 'AIC IIT Kottayam',
+    'IIT Bhubaneswar Research Park', 'STPI Bhubaneswar', 'UnLtd India',
+    'menstrual health startup incubator India', 'EarthImpact supporters'
+  ],
+  alternates: { canonical: 'https://earthimpact.co.in/ecosystem-support' },
+  openGraph: {
+    title: 'Ecosystem Support – EarthImpact backed by UNICEF, IIT, STPI',
+    description: 'EarthImpact is backed by UNICEF India, IIT Bhubaneswar, AIC IIT Kottayam, STPI and UnLtd India.',
+    url: 'https://earthimpact.co.in/ecosystem-support',
+  }
 };
 
 const incubators = [

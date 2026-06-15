@@ -4,6 +4,9 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
+// Note: metadata cannot be exported from 'use client' pages.
+// Contact page SEO is handled by the root layout.js metadata.
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '', email: '', org: '', subject: '', message: '', updates: false,
