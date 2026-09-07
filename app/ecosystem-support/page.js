@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Ecosystem Support – UNICEF, IIT Bhubaneswar & Incubators | EarthImpact',
+  title: 'Ecosystem Support & Networks | EarthImpact Innovations',
   description: 'EarthImpact Innovations is backed by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar Research Park, STPI Bhubaneswar, and UnLtd India. Building a strong ecosystem for sustainable menstrual health innovation.',
   keywords: [
     'EarthImpact ecosystem', 'UNICEF India', 'AIC IIT Kottayam',

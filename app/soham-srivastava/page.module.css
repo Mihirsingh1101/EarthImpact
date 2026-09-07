@@ -1,0 +1,583 @@
+/* =========================================
+   SOHAM SRIVASTAVA FOUNDER PAGE
+   ========================================= */
+
+/* ── Hero ── */
+.hero {
+  background: var(--cream);
+  padding: 100px 0 60px;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(40px, 5vw, 64px);
+  color: var(--text-dark);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.heroRole {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--forest);
+  margin: 0;
+}
+
+.heroTagline {
+  font-size: 16px;
+  color: var(--text-body);
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+}
+
+.founderImageWrap {
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+}
+
+.founderImage {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+
+.founderBadge {
+  position: absolute;
+  bottom: -16px;
+  left: 24px;
+  background: var(--forest);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+/* ── About ── */
+.about {
+  background: var(--white);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.aboutTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aboutText {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── Why EarthImpact ── */
+.why {
+  background: var(--cream);
+  padding: 80px 0;
+}
+
+.whyGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.whyCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.25s ease;
+}
+
+.whyCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.whyIcon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.whyTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20px;
+  color: var(--text-dark);
+  margin: 0 0 10px;
+}
+
+.whyDesc {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Building EarthImpact ── */
+.building {
+  background: var(--forest);
+}
+
+.buildingGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.buildingTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(24px, 2.5vw, 36px);
+  color: var(--white);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.buildingDesc {
+  font-size: 15px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.buildingRight {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.buildingPoint {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.buildingPointIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.buildingPointText {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.4;
+}
+
+/* ── Milestones ── */
+.milestones {
+  background: var(--cream-dark);
+  padding: 80px 0;
+}
+
+.milestones .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+}
+
+.milestonesTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 36px);
+  color: var(--text-dark);
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.milestonesTrack {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.milestonesLine {
+  display: none;
+}
+
+.milestoneItem {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.25s ease;
+}
+
+.milestoneItem:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.milestoneDot {
+  margin-bottom: 12px;
+}
+
+.milestoneIcon {
+  font-size: 28px;
+}
+
+.milestoneYear {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--forest);
+  margin: 0 0 6px;
+}
+
+.milestoneTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 17px;
+  color: var(--text-dark);
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.milestoneDesc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Ecosystem ── */
+.ecosystem {
+  background: var(--white);
+}
+
+.ecosystemTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 36px);
+  color: var(--text-dark);
+  margin: 0 0 40px;
+}
+
+.ecosystemGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.ecosystemCard {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.ecosystemCard:hover {
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.ecosystemLogo {
+  width: 64px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.ecosystemLogoImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ecosystemName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 4px;
+}
+
+.ecosystemRole {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ecosystemCta {
+  text-align: center;
+}
+
+/* ── Media ── */
+.media {
+  background: var(--cream);
+  padding: 80px 0;
+}
+
+.media .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+}
+
+.mediaTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 36px);
+  color: var(--text-dark);
+  margin: 0 0 32px;
+}
+
+.mediaGrid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.mediaCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 380px;
+  transition: all 0.25s ease;
+}
+
+.mediaCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.mediaOutlet {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mediaLogo {
+  max-height: 32px;
+  object-fit: contain;
+}
+
+.mediaType {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--forest);
+  margin: 0 0 8px;
+}
+
+.mediaHeadline {
+  font-size: 15px;
+  color: var(--text-dark);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.mediaDate {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.mediaCta {
+  margin-top: 8px;
+}
+
+/* ── Connect ── */
+.connect {
+  background: var(--white);
+  padding: 80px 0;
+}
+
+.connectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.connectTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 36px);
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+.connectDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.connectLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--forest);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.connectLink:hover {
+  color: var(--pink);
+}
+
+.connectIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.connectRight {
+  display: flex;
+  justify-content: center;
+}
+
+.signatureBlock {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.sigLine {
+  width: 60px;
+  height: 3px;
+  background: var(--forest);
+  border-radius: 2px;
+  margin: 0 auto 20px;
+}
+
+.sigName {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 22px;
+  color: var(--text-dark);
+  margin: 0 0 6px;
+}
+
+.sigRole {
+  font-size: 13px;
+  color: var(--forest);
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.sigCompany {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 16px;
+}
+
+.sigLeaf {
+  font-size: 24px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .ecosystemGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent,
+  .aboutGrid,
+  .buildingGrid,
+  .connectGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroRight {
+    order: -1;
+  }
+
+  .founderImageWrap {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .founderImage {
+    height: 340px;
+  }
+
+  .whyGrid,
+  .milestonesTrack {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystemGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

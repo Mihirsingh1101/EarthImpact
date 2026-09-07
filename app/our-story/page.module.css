@@ -5,6 +5,21 @@
   background: var(--cream);
 }
 
+/* Founder profile link added for /soham-srivastava internal link */
+.founderProfileLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--forest);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.founderProfileLink:hover {
+  color: var(--pink);
+}
+
 .heroContent {
   max-width: 1400px;
   margin: 0 auto;

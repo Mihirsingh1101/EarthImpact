@@ -1,0 +1,137 @@
+/* ── Hero ── */
+.hero {
+  background: var(--forest);
+  padding: 100px 0 60px;
+}
+
+.heroTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(28px, 4vw, 52px);
+  color: var(--white);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  max-width: 740px;
+}
+
+.heroDesc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0;
+}
+
+/* ── Articles Grid ── */
+.articles {
+  background: var(--cream);
+}
+
+.articlesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.articleCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.25s ease;
+}
+
+.articleCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.articleCardSoon {
+  opacity: 0.7;
+}
+
+.articleMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.articleTag {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--forest);
+  background: var(--cream);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+.articleRead {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.articleTitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20px;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.articleExcerpt {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.articleFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.articleDate {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.articleLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--forest);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.articleLink:hover {
+  color: var(--pink);
+}
+
+.articleSoon {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+  .articlesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .articlesGrid {
+    grid-template-columns: 1fr;
+  }
+}

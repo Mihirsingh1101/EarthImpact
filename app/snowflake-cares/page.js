@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Snowflakes – India\'s Safest Biodegradable Sanitary Pad | EarthImpact',
+  title: 'Snowflake Cares | EarthImpact Innovations',
   description: 'Snowflakes by EarthImpact is India\'s first HemoSan-powered, plastic-free, biodegradable sanitary pad. Non-toxic, endocrine-safe, anti-bacterial and compostable. Safe for women, safe for the planet.',
   keywords: [
     'Snowflakes pad', 'Snowflakes sanitary pad India', 'biodegradable sanitary pad',

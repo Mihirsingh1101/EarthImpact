@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Snowflake Cares', href: '/snowflake-cares' },
   { label: 'Ecosystem Support', href: '/ecosystem-support' },
   { label: 'Awards & Media', href: '/awards-media' },
+  { label: 'Insights', href: '/insights' },
   { label: 'Contact Us', href: '/contact' },
 ];
 

@@ -1,6 +1,11 @@
 import './globals.css';
 import Navbar from '@/components/Navbar';
 
+// Analytics IDs are sourced from .env.local — fill them in before going live.
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
+
+
 export const metadata = {
   metadataBase: new URL('https://earthimpact.co.in'),
   title: {
@@ -75,6 +80,38 @@ export default function RootLayout({ children }) {
         <meta name="geo.placename" content="Bhubaneswar, Odisha, India" />
         <meta name="geo.position" content="20.2961;85.8245" />
         <meta name="ICBM" content="20.2961, 85.8245" />
+
+        {/* ── Google Analytics 4 ── */}
+        {GA_ID && GA_ID !== 'G-XXXXXXXXXX' && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
+
+        {/* ── Microsoft Clarity ── */}
+        {CLARITY_ID && CLARITY_ID !== 'your_clarity_project_id_here' && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "${CLARITY_ID}");
+              `,
+            }}
+          />
+        )}
       </head>
       <body>
         {/* Organization Schema */}
@@ -84,6 +121,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://earthimpact.co.in/#organization",
               "name": "EarthImpact Innovations Pvt. Ltd.",
               "alternateName": ["EarthImpact", "Earth Impact Innovations"],
               "url": "https://earthimpact.co.in",
@@ -95,9 +133,10 @@ export default function RootLayout({ children }) {
                 "name": "Soham Srivastava",
                 "alternateName": "Soham Srivastav",
                 "jobTitle": "Founder & Chief Empathy Officer",
-                "affiliation": "IIT Bhubaneswar"
+                "affiliation": "IIT Bhubaneswar",
+                "url": "https://earthimpact.co.in/soham-srivastava"
               },
-              "foundingDate": "2024",
+              "foundingDate": "2025",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "IIT Bhubaneswar Research Park",
@@ -115,14 +154,8 @@ export default function RootLayout({ children }) {
               },
               "sameAs": [
                 "https://www.linkedin.com/company/earthimpact",
-                "https://www.linkedin.com/in/namaste-soham"
-              ],
-              "knowsAbout": [
-                "Biodegradable Sanitary Pads",
-                "Menstrual Health",
-                "Sustainable Materials",
-                "HemoSan Hydrogel",
-                "Women Health Innovation"
+                "https://www.linkedin.com/in/namaste-soham",
+                "https://www.instagram.com/earthimpact.innovations"
               ]
             })
           }}

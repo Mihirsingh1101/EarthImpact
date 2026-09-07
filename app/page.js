@@ -3,8 +3,9 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'EarthImpact – Building Safer Solutions for Women & Our Planet',
-  description: 'We create non-toxic, endocrine-safe and biodegradable solutions for menstrual care that are safe for women and gentle on the environment.',
+  title: 'EarthImpact Innovations | Safer Solutions for Women & Our Planet',
+  description: 'EarthImpact Innovations creates non-toxic, endocrine-safe and biodegradable menstrual care solutions that are safe for women and gentle on the environment.',
+  alternates: { canonical: 'https://earthimpact.co.in' },
 };
 
 export default function HomePage() {

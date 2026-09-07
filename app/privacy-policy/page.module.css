@@ -1,0 +1,78 @@
+/* ── Shared styles for legal pages (Privacy Policy & Terms) ── */
+.hero {
+  background: var(--cream-dark);
+  padding: 100px 0 40px;
+}
+
+.title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--text-dark);
+  margin: 0 0 8px;
+  line-height: 1.1;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.content {
+  background: var(--white);
+}
+
+.policy {
+  max-width: 760px;
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.policy h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 22px;
+  color: var(--text-dark);
+  margin: 40px 0 12px;
+}
+
+.policy p {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.policy ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.policy ul li {
+  font-size: 15px;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.policy a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.policy a:hover {
+  color: var(--pink);
+}
+
+.backLink {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}

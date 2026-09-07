@@ -30,9 +30,11 @@ export default function Footer() {
           <ul className={styles.linkList}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/our-story">Our Story</Link></li>
+            <li><Link href="/soham-srivastava">Soham Srivastava</Link></li>
             <li><Link href="/snowflake-cares">Snowflake Cares</Link></li>
             <li><Link href="/ecosystem-support">Ecosystem Support</Link></li>
-            <li><Link href="/awards-media">Awards & Media</Link></li>
+            <li><Link href="/awards-media">Awards &amp; Media</Link></li>
+            <li><Link href="/insights">Insights</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
@@ -50,9 +52,9 @@ export default function Footer() {
         <div className={styles.col}>
           <h4 className={styles.colTitle}>Legal</h4>
           <ul className={styles.linkList}>
-            <li><Link href="#">Privacy Policy</Link></li>
-            <li><Link href="#">Terms of Use</Link></li>
-            <li><Link href="#">Refund & Returns</Link></li>
+            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link href="/terms">Terms of Use</Link></li>
+            <li><Link href="#">Refund &amp; Returns</Link></li>
             <li><Link href="#">Shipping Policy</Link></li>
           </ul>
         </div>

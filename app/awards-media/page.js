@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Awards & Recognition – EarthImpact Innovations | UNICEF, IIT, STPI',
+  title: 'Awards & Recognition | EarthImpact Innovations',
   description: 'EarthImpact Innovations recognized by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar, STPI, and UnLtd India for innovation in biodegradable menstrual health and women\'s safety.',
   keywords: [
     'EarthImpact awards', 'UNICEF India startup', 'AIC IIT Kottayam incubated',
