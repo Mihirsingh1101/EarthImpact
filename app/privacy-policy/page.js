@@ -90,7 +90,8 @@ export default function PrivacyPolicyPage() {
             <p>
               If you have questions about this Privacy Policy, please contact:<br />
               <strong>EarthImpact Innovations Pvt. Ltd.</strong><br />
-              IIT Bhubaneswar Research Park, Bhubaneswar, Odisha 751013, India<br />
+              TBI, NIT Calicut, NIT Campus P.O.<br />
+              Kozhikode, Kerala – 673601, India<br />
               Email: <a href="mailto:info@earthimpact.co.in">info@earthimpact.co.in</a>
             </p>
 

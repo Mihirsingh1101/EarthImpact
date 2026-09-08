@@ -26,7 +26,7 @@ const articles = [
   {
     slug: null,
     title: 'Why Menstrual Waste Is a Growing Environmental Problem in India',
-    excerpt: 'India generates approximately 1.5 lakh tonnes of menstrual waste every year. Most of it is plastic-based and takes 450–800 years to decompose. Here\'s why this matters.',
+    excerpt: 'India generates an estimated ~1.13 lakh tonnes of used sanitary-pad waste reaching landfills annually. Most is plastic-based and can persist for centuries. Here\'s why this matters.',
     date: 'Coming Soon',
     readTime: null,
     tag: 'Environment',

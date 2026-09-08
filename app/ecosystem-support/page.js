@@ -4,61 +4,62 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'Ecosystem Support & Networks | EarthImpact Innovations',
-  description: 'EarthImpact Innovations is backed by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar Research Park, STPI Bhubaneswar, and UnLtd India. Building a strong ecosystem for sustainable menstrual health innovation.',
+  description: 'EarthImpact Innovations is supported by AIC-IIIT Kottayam, TBI NIT Calicut, SIIC IIT Kanpur, IIM Calcutta Innovation Park, UnLtd India and STPI Bhubaneswar.',
   keywords: [
-    'EarthImpact ecosystem', 'UNICEF India', 'AIC IIT Kottayam',
-    'IIT Bhubaneswar Research Park', 'STPI Bhubaneswar', 'UnLtd India',
-    'menstrual health startup incubator India', 'EarthImpact supporters'
+    'EarthImpact ecosystem', 'AIC IIIT Kottayam', 'TBI NIT Calicut',
+    'SIIC IIT Kanpur', 'IIM Calcutta Innovation Park', 'UnLtd India',
+    'menstrual health startup incubator India', 'NIDHI-PRAYAS', 'NIDHI-EIR'
   ],
   alternates: { canonical: 'https://earthimpact.co.in/ecosystem-support' },
   openGraph: {
-    title: 'Ecosystem Support – EarthImpact backed by UNICEF, IIT, STPI',
-    description: 'EarthImpact is backed by UNICEF India, IIT Bhubaneswar, AIC IIT Kottayam, STPI and UnLtd India.',
+    title: 'Ecosystem Support & Networks | EarthImpact Innovations',
+    description: 'EarthImpact is supported by AIC-IIIT Kottayam, TBI NIT Calicut, SIIC IIT Kanpur, IIM Calcutta Innovation Park, UnLtd India and STPI Bhubaneswar.',
     url: 'https://earthimpact.co.in/ecosystem-support',
   }
 };
 
 const incubators = [
-  { name: 'AIC IIT Kottayam', tagline: 'Incubated in 2024', logo: 'aic.jpeg' },
-  { name: 'IIT Bhubaneswar', tagline: 'Supported Innovation', logo: 'iit-bbs.webp' },
-  { name: 'UNICEF India', tagline: 'Collaborative Partner', logo: 'unicef-logo.png' },
-  { name: 'STPI Bhubaneswar', tagline: 'Technical Support & Recognition', logo: 'stpi.webp' },
-  { name: 'UnLtd India', tagline: 'Social Entrepreneur Recognition', logo: 'unltd.jpg' },
+  { name: 'AIC-IIIT Kottayam', tagline: 'Pre-incubated by', logo: 'aic.jpeg' },
+  { name: 'SIIC IIT Kanpur', tagline: 'Selected under Advaya 2.0; funding received', logo: 'aic.jpeg' },
+  { name: 'TBI NIT Calicut', tagline: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: 'stpi.webp' },
+  { name: 'IIM Calcutta Innovation Park', tagline: 'NIDHI-EIR support', logo: 'stpi.webp' },
+  { name: 'UnLtd India', tagline: 'Social Enterprise Support', logo: 'unltd.jpg' },
+  { name: 'STPI Bhubaneswar', tagline: 'Technology Ecosystem Support', logo: 'stpi.webp' },
 ];
 
 const ecosystemTimeline = [
-  { year: '2024', title: 'Incubated by AIC IIT Kottayam', desc: 'This marked the beginning of our innovation journey.' },
-  { year: '2024', title: 'Research & Prototype', desc: 'Deep research, material innovation and early prototyping.' },
-  { year: '2025', title: 'Collaborations & Hackathon Win', desc: 'Won ReFlow Menstrual Health Hackathon by IIT BBS & UNICEF India.' },
-  { year: '2025', title: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. was incorporated.' },
-  { year: '2026', title: 'Recognition & Acceleration', desc: 'Recognized by STPI, GUESSS India & UnLtd India.' },
-  { year: 'Beyond', title: 'Scaling Impact', desc: 'Expanding solutions, building partnerships and creating a sustainable future.' },
+  { year: '2024', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation — marked the beginning of the formal EarthImpact journey.' },
+  { year: '2024–25', title: 'Research & Prototype Development', desc: 'Deep research, material innovation and early prototyping at NIT Calicut.' },
+  { year: '2025', title: 'ReFlow Hackathon Winner', desc: 'Won ReFlow Menstrual Health Innovation Hackathon.' },
+  { year: 'Feb 2025', title: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. officially incorporated.' },
+  { year: '2025', title: 'NIDHI-PRAYAS & NIDHI-EIR', desc: 'Received NIDHI-PRAYAS through TBI NIT Calicut and NIDHI-EIR through IIM Calcutta Innovation Park.' },
+  { year: '2025–26', title: 'GUESSS India & UnLtd India Recognition', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India.' },
 ];
 
 const networkCategories = [
   {
-    icon: '🎓',
-    title: 'Academic Partners',
-    desc: 'Collaborating with premier institutions for research, innovation and validation.',
-    members: ['AIC', 'IIT Bhubaneswar', 'CIPET'],
+    icon: '🚀',
+    title: 'Incubation & Innovation Support',
+    desc: 'Supported by incubators and innovation programmes that empower deep-tech startups.',
+    members: ['AIC-IIIT Kottayam', 'SIIC IIT Kanpur', 'TBI NIT Calicut', 'IIM Calcutta Innovation Park'],
   },
   {
-    icon: '🤝',
-    title: 'Innovation Partners',
-    desc: 'Working with innovation programs and challenge platforms.',
-    members: ['UNICEF India', 'ReFlow', 'GUESSS'],
+    icon: '🏆',
+    title: 'Challenge & Recognition',
+    desc: 'Recognised through competitive innovation challenges and entrepreneur programmes.',
+    members: ['ReFlow Hackathon Winner', 'GUESSS India Entrepreneur'],
   },
   {
     icon: '🏛️',
-    title: 'Government & Support Bodies',
-    desc: 'Supported by organizations that empower startups and deep-tech.',
-    members: ['STPI', 'DPIIT', '#startupindia'],
+    title: 'Government & Technology Ecosystem',
+    desc: 'Supported by government-backed bodies that empower innovation startups.',
+    members: ['STPI Bhubaneswar', 'NIDHI-PRAYAS', 'NIDHI-EIR'],
   },
   {
-    icon: '👥',
-    title: 'Community & Impact Collaborators',
-    desc: 'Partnering with communities and organizations for real-world impact.',
-    members: ['NGOs', 'Women Groups', 'Health Orgs'],
+    icon: '🤝',
+    title: 'Community & Impact',
+    desc: 'Supported by organisations that champion social enterprise and impact.',
+    members: ['UnLtd India'],
   },
 ];
 

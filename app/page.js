@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'EarthImpact Innovations | Safer Solutions for Women & Our Planet',
-  description: 'EarthImpact Innovations creates non-toxic, endocrine-safe and biodegradable menstrual care solutions that are safe for women and gentle on the environment.',
+  description: 'EarthImpact Innovations develops safer, science-backed and sustainable solutions for women\'s health, starting with menstrual care.',
   alternates: { canonical: 'https://earthimpact.co.in' },
 };
 
@@ -110,10 +110,9 @@ export default function HomePage() {
 
               <div className={styles.statsGrid}>
                 {[
-                  { num: '35+', label: 'Crore Women', desc: 'Menstruate in India' },
-                  { num: '20+', label: 'Harmful Chemicals', desc: 'Found in Conventional Pads' },
-                  { num: '84%', label: 'Experience Pain', desc: 'During Periods' },
-                  { num: '56%', label: 'Face Rashes', desc: '& Irritation' },
+                  { num: '35+', label: 'Crore Women', desc: 'Menstruate in India every month' },
+                  { num: '12', label: 'Phthalate Types Detected', desc: 'In tested menstrual products' },
+                  { num: '84.2%', label: 'Reported Dysmenorrhea', desc: 'In one Indian study on period pain' },
                 ].map(({ num, label, desc }) => (
                   <div key={num} className={styles.statItem}>
                     <div className="stat-number">{num}</div>
@@ -122,7 +121,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <p className={styles.sources}>Sources: NCBI Data, NFHS-5, U.S. EPA Research, iMarcGroup Report, Monitor Intelligence</p>
+              <p className={styles.sources}>Multiple potentially concerning chemicals have been detected in tested menstrual products. Sources: Toxics Link, NCBI Data, NFHS-5</p>
             </div>
 
             <div className={styles.problemRight}>
@@ -133,14 +132,14 @@ export default function HomePage() {
                   className={styles.wastePicImg}
                 />
                 <div className={styles.wasteCard1}>
-                  <div className={styles.wasteCardIcon}>🗑️</div>
-                  <div className={styles.wasteCardNum}>~1.5 Lakh<br />Tonnes</div>
-                  <div className={styles.wasteCardDesc}>of menstrual waste generated annually in India</div>
+                  <div className={styles.wasteCardIcon}>🌿</div>
+                  <div className={styles.wasteCardNum}>~1.13 Lakh<br />Tonnes</div>
+                  <div className={styles.wasteCardDesc}>estimated used sanitary-pad waste reaching Indian landfills annually (Toxics Link)</div>
                 </div>
                 <div className={styles.wasteCard2}>
-                  <div className={styles.wasteCardIcon}>🧪</div>
-                  <div className={styles.wasteCardNum}>450–800<br />Years</div>
-                  <div className={styles.wasteCardDesc}>for a single pad to decompose</div>
+                  <div className={styles.wasteCardIcon}>⏳</div>
+                  <div className={styles.wasteCardNum}>Centuries<br />in Landfill</div>
+                  <div className={styles.wasteCardDesc}>conventional pads can persist for centuries in landfill conditions</div>
                 </div>
               </div>
             </div>
@@ -164,11 +163,11 @@ export default function HomePage() {
 
               <div className={styles.solutionFeaturesList}>
                 {[
-                  { icon: '🌿', title: 'Eco-friendly' },
-                  { icon: '🧪', title: 'HemoStatic & Chemical Free' },
+                  { icon: '🌿', title: 'Eco-friendly Design' },
+                  { icon: '🧪', title: 'HemoSan Hydrogel + Material-Safety Focus' },
                   { icon: '💧', title: 'High Absorbency' },
-                  { icon: '♻️', title: 'Biodegradable' },
-                  { icon: '🛡️', title: 'Anti-fungal & Non-carcinogenic' },
+                  { icon: '♻️', title: 'Biodegradable under specified conditions' },
+                  { icon: '🛡️', title: 'Hygiene-Focused Materials' },
                 ].map(({ icon, title }) => (
                   <div key={title} className={styles.solutionFeatureRow}>
                     <span className={styles.solutionFeatureRowIcon}>{icon}</span>
@@ -205,10 +204,10 @@ export default function HomePage() {
           </div>
           <div className={styles.impactGrid}>
             {[
-              { icon: '👩', title: 'Healthier for Women', desc: 'No harmful chemicals. Gentle on the most sensitive part of the body.' },
-              { icon: '🌿', title: 'Cleaner for the Planet', desc: 'Zero plastic, zero toxic waste. Designed to biodegrade naturally.' },
-              { icon: '🔬', title: 'Responsibly Innovated', desc: 'Science-backed materials that create real impact at scale.' },
-              { icon: '🌍', title: 'Future-Ready Solutions', desc: 'Building a healthier, sustainable world for generations to come.' },
+              { icon: '🌿', title: 'Healthier for Women', desc: 'Designed to avoid specified chemicals of concern. Gentle on the most sensitive part of the body.' },
+              { icon: '🌍', title: 'Designed to Reduce Plastic Waste', desc: 'Designed to reduce persistent plastic waste. Built for a lower environmental footprint at end of life.' },
+              { icon: '💡', title: 'Responsibly Innovated', desc: 'Science-backed materials that create real impact at scale.' },
+              { icon: '🌱', title: 'Future-Ready Solutions', desc: 'Building a healthier, sustainable world for generations to come.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className={styles.impactCard}>
                 <div className={styles.impactIcon}>{icon}</div>

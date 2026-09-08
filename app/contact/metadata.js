@@ -2,7 +2,7 @@
 // (Required because contact/page.js uses 'use client')
 export const metadata = {
   title: 'Contact EarthImpact Innovations – Partnerships, Investors & Media',
-  description: 'Contact EarthImpact Innovations Pvt. Ltd. for partnerships, investment, research collaboration or media inquiries. Reach Soham Srivastava at info@earthimpact.co.in, IIT Bhubaneswar.',
+  description: 'Contact EarthImpact Innovations Pvt. Ltd. for partnerships, investment, research collaboration or media inquiries. Reach Soham Srivastava at soham.srivastava@earthimpact.co.in.',
   keywords: [
     'contact EarthImpact', 'EarthImpact partnership', 'invest in EarthImpact',
     'Soham Srivastava contact', 'earthimpact.co.in contact',

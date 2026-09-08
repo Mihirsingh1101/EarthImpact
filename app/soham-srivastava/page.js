@@ -3,16 +3,16 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Soham Srivastava | Founder, EarthImpact Innovations',
+  title: 'Soham Srivastava | Founder of EarthImpact Innovations',
   description: 'Soham Srivastava is the founder of EarthImpact Innovations, building safer and sustainable solutions for women\'s health through innovation, materials and technology.',
   keywords: [
     'Soham Srivastava', 'Soham Srivastav', 'Soham Srivastava EarthImpact',
-    'Soham Srivastava IIT Bhubaneswar', 'EarthImpact Innovations founder',
+    'EarthImpact Innovations founder',
     'biodegradable sanitary pad innovator India', 'menstrual health entrepreneur India',
   ],
   alternates: { canonical: 'https://earthimpact.co.in/soham-srivastava' },
   openGraph: {
-    title: 'Soham Srivastava | Founder, EarthImpact Innovations',
+    title: 'Soham Srivastava | Founder of EarthImpact Innovations',
     description: 'Soham Srivastava is the founder of EarthImpact Innovations, building safer and sustainable solutions for women\'s health.',
     url: 'https://earthimpact.co.in/soham-srivastava',
     images: [{ url: 'https://earthimpact.co.in/images/founder/soham.jpg', alt: 'Soham Srivastava - Founder of EarthImpact Innovations' }],
@@ -20,20 +20,23 @@ export const metadata = {
 };
 
 const milestones = [
-  { year: '2024', icon: '🏛️', title: 'Incubated by AIC IIT Kottayam', desc: 'Selected for incubation at Atal Incubation Centre, IIT Kottayam — marking the formal start of the EarthImpact innovation journey.' },
-  { year: '2024–25', icon: '🔬', title: '1.5+ Years of R&D', desc: 'Extensive research and development in non-toxic, endocrine-safe and biodegradable materials for menstrual care.' },
-  { year: '2025', icon: '🏆', title: 'ReFlow Hackathon Winner', desc: 'Won the ReFlow Menstrual Health Hackathon organised by IIT Bhubaneswar and UNICEF India.' },
+  { year: '2024', icon: '🏛️', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation at AIC-IIIT Kottayam — marking the formal start of the EarthImpact innovation journey.' },
+  { year: '2024–25', icon: '🔬', title: '1.5+ Years of R&D', desc: 'Extensive research and development in non-toxic, biodegradable materials for menstrual care, based at NIT Calicut.' },
+  { year: '2025', icon: '🏆', title: 'Winner — ReFlow Menstrual Health Hackathon', desc: 'Won the ReFlow Menstrual Health Innovation Hackathon. The event was associated with IIT Bhubaneswar Research and Entrepreneurship Park.' },
   { year: 'Feb 2025', icon: '🚀', title: 'EarthImpact Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. was officially incorporated, turning years of research into a real company.' },
-  { year: '2025–26', icon: '🏅', title: 'STPI & GUESSS India Recognition', desc: 'Recognised by Software Technology Parks of India (STPI) and GUESSS India for innovation in women\'s health and entrepreneurship.' },
-  { year: '2026', icon: '🤝', title: 'UnLtd India — Social Entrepreneur', desc: 'Recognised by UnLtd India as a social entrepreneur building impactful, sustainable solutions.' },
+  { year: '2025', icon: '🤝', title: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur; funding received.' },
+  { year: '2025', icon: '🏅', title: 'TBI NIT Calicut — NIDHI-PRAYAS', desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.' },
+  { year: '2025', icon: '🌟', title: 'IIM Calcutta Innovation Park — NIDHI-EIR', desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.' },
+  { year: '2025–26', icon: '🌍', title: 'GUESSS India & UnLtd India', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India as a social entrepreneur.' },
 ];
 
 const ecosystemLinks = [
-  { name: 'AIC IIT Kottayam', role: 'Incubator (2024)', logo: '/images/logos/incubators/aic.jpeg' },
-  { name: 'IIT Bhubaneswar', role: 'Research & Innovation Partner', logo: '/images/logos/incubators/iit-bbs.webp' },
-  { name: 'UNICEF India', role: 'Collaborative Partner', logo: '/images/logos/incubators/unicef-logo.png' },
-  { name: 'STPI Bhubaneswar', role: 'Government Recognition', logo: '/images/logos/incubators/stpi.webp' },
-  { name: 'UnLtd India', role: 'Social Entrepreneur Network', logo: '/images/logos/incubators/unltd.jpg' },
+  { name: 'AIC-IIIT Kottayam', role: 'Pre-incubated by (2024)', logo: '/images/logos/incubators/aic.jpeg' },
+  { name: 'SIIC IIT Kanpur', role: 'Selected under Advaya 2.0; funding received', logo: '/images/logos/incubators/aic.jpeg' },
+  { name: 'TBI NIT Calicut', role: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: '/images/logos/incubators/stpi.webp' },
+  { name: 'IIM Calcutta Innovation Park', role: 'NIDHI-EIR support', logo: '/images/logos/incubators/stpi.webp' },
+  { name: 'STPI Bhubaneswar', role: 'Technology Ecosystem Support', logo: '/images/logos/incubators/stpi.webp' },
+  { name: 'UnLtd India', role: 'Social Enterprise Support', logo: '/images/logos/incubators/unltd.jpg' },
 ];
 
 export default function SohamSrivastavaPage() {
@@ -53,10 +56,7 @@ export default function SohamSrivastavaPage() {
         "@id": "https://earthimpact.co.in/#organization",
         "name": "EarthImpact Innovations Pvt. Ltd."
       },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "IIT Bhubaneswar"
-      },
+      "alumniOf": undefined,
       "sameAs": [
         "https://www.linkedin.com/in/namaste-soham"
       ]
@@ -104,7 +104,7 @@ export default function SohamSrivastavaPage() {
               />
               <div className={styles.founderBadge}>
                 <span className={styles.badgeIcon}>🌿</span>
-                <span className={styles.badgeText}>IIT Bhubaneswar</span>
+                <span className={styles.badgeText}>EarthImpact Innovations</span>
               </div>
             </div>
           </div>
@@ -117,17 +117,17 @@ export default function SohamSrivastavaPage() {
           <div className={styles.aboutGrid}>
             <div className={styles.aboutLeft}>
               <p className="section-tag">ABOUT 🌿</p>
-              <h2 className={styles.aboutTitle}>Engineering background, entrepreneurial mission.</h2>
+              <h2 className={styles.aboutTitle}>Science-driven founder. Mission-first company.</h2>
             </div>
             <div className={styles.aboutRight}>
               <p className={styles.aboutText}>
-                Soham Srivastava is a materials and innovation-driven entrepreneur based in Bhubaneswar, Odisha. With a foundation in engineering and research from IIT Bhubaneswar, Soham brings a science-first mindset to one of India's most overlooked health and environmental crises — menstrual care.
+                Soham Srivastava is an entrepreneur and innovator focused on women's health and sustainable materials. He founded EarthImpact Innovations with a science-first mindset, addressing one of India's most overlooked health and environmental challenges — menstrual care.
               </p>
               <p className={styles.aboutText}>
-                His journey is rooted in empathy: a real-life experience that opened his eyes to the hidden harm in everyday products, and sparked a multi-year commitment to finding better answers. Before founding EarthImpact, Soham spent over 1.5 years in research, material science exploration and prototype development.
+                His journey began with empathy: a real-life experience that opened his eyes to the hidden risks in everyday products, and sparked a multi-year commitment to finding better answers. Soham spent over 1.5 years in research, material science exploration and prototype development before founding EarthImpact.
               </p>
               <p className={styles.aboutText}>
-                Today, he leads EarthImpact Innovations Pvt. Ltd. — a company on a mission to make non-toxic, endocrine-safe and biodegradable menstrual care the standard, not the exception.
+                Today, he leads EarthImpact Innovations Pvt. Ltd. — a company on a mission to make safer, science-backed and biodegradable menstrual care the standard, not the exception.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function SohamSrivastavaPage() {
               <div className={styles.whyIcon}>💡</div>
               <h3 className={styles.whyTitle}>The Spark</h3>
               <p className={styles.whyDesc}>
-                A personal experience revealed that conventional sanitary pads contain over 20 harmful chemicals — from endocrine-disrupting chemicals (EDCs) to volatile organic compounds — that women are exposed to for hours every month for decades.
+                A personal experience revealed that conventional sanitary pads have been found to contain multiple potentially concerning chemicals — including phthalates and other substances detected in tested products. Women may be exposed to these for hours every month for decades.
               </p>
             </div>
             <div className={styles.whyCard}>
@@ -156,7 +156,7 @@ export default function SohamSrivastavaPage() {
               <div className={styles.whyIcon}>🌍</div>
               <h3 className={styles.whyTitle}>The Mission</h3>
               <p className={styles.whyDesc}>
-                Conventional pads also generate ~1.5 lakh tonnes of non-degradable waste in India annually. Soham's mission is to solve both crises at once — building products that are safer for women's bodies and for the planet.
+                Conventional pads also generate an estimated ~1.13 lakh tonnes of used sanitary-pad waste reaching Indian landfills annually (Toxics Link). These pads can persist for centuries in landfill conditions. Soham's mission is to solve both crises at once — building products that are safer for women's bodies and for the planet.
               </p>
             </div>
           </div>
@@ -183,10 +183,10 @@ export default function SohamSrivastavaPage() {
             <div className={styles.buildingRight}>
               {[
                 { icon: '🧪', label: 'Proprietary HemoSan hydrogel' },
-                { icon: '♻️', label: 'Plastic-free, biodegradable pad layers' },
-                { icon: '🛡️', label: 'Anti-fungal and non-carcinogenic formulation' },
-                { icon: '🤝', label: 'UNICEF, IIT BBS and incubator-backed' },
-                { icon: '🌱', label: 'Zero toxic waste at end of life' },
+                { icon: '♻️', label: 'Designed to be plastic-free and biodegradable' },
+                { icon: '🔬', label: 'Hygiene-focused materials and formulation' },
+                { icon: '🤝', label: 'Supported by NIDHI-PRAYAS, NIDHI-EIR and incubators' },
+                { icon: '🌱', label: 'Designed to reduce persistent plastic waste at end of life' },
               ].map(({ icon, label }) => (
                 <div key={label} className={styles.buildingPoint}>
                   <span className={styles.buildingPointIcon}>{icon}</span>

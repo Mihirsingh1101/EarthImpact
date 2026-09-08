@@ -3,12 +3,12 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Awards & Recognition | EarthImpact Innovations',
-  description: 'EarthImpact Innovations recognized by UNICEF India, AIC IIT Kottayam, IIT Bhubaneswar, STPI, and UnLtd India for innovation in biodegradable menstrual health and women\'s safety.',
+  title: 'Awards, Recognition & Media | EarthImpact Innovations',
+  description: 'EarthImpact Innovations recognised by AIC-IIIT Kottayam, SIIC IIT Kanpur Advaya 2.0, TBI NIT Calicut NIDHI-PRAYAS, IIM Calcutta Innovation Park NIDHI-EIR, STPI Bhubaneswar, and Winner of ReFlow Menstrual Health Hackathon.',
   keywords: [
-    'EarthImpact awards', 'UNICEF India startup', 'AIC IIT Kottayam incubated',
-    'IIT Bhubaneswar startup', 'STPI recognized', 'UnLtd India social entrepreneur',
-    'menstrual health award India', 'Soham Srivastava awards'
+    'EarthImpact awards', 'AIC IIIT Kottayam incubated', 'ReFlow hackathon winner',
+    'SIIC IIT Kanpur Advaya 2.0', 'TBI NIT Calicut NIDHI-PRAYAS', 'IIM Calcutta NIDHI-EIR',
+    'STPI Bhubaneswar recognition', 'GUESSS India entrepreneur', 'EarthImpact recognition', 'Soham Srivastava awards'
   ],
   alternates: { canonical: 'https://earthimpact.co.in/awards-media' },
   openGraph: {
@@ -20,28 +20,46 @@ export const metadata = {
 
 const recognitions = [
   {
-    name: 'STPI Incorporation',
-    subtitle: '',
-    badge: 'GOVERNMENT RECOGNITION',
-    desc: 'Officially recognized by STPI for our deep-tech innovation in women\'s health and sustainable materials.',
-    year: '2025',
-    logo: 'stpi.webp'
-  },
-  {
-    name: 'AIC IIT Kottayam Incubated Startup',
-    subtitle: '',
+    name: 'AIC-IIIT Kottayam — Pre-incubated Startup',
     badge: 'INCUBATION SUPPORT',
-    desc: 'Proud to be incubated at AIC IIT Kottayam and part of a strong innovation-driven startup ecosystem.',
+    desc: 'First pre-incubation. EarthImpact was pre-incubated at AIC-IIIT Kottayam, marking the formal start of the company\'s innovation journey.',
     year: '2024',
     logo: 'aic.jpeg'
   },
   {
-    name: 'UNICEF India Collaborative Partner',
-    subtitle: '',
-    badge: 'COLLABORATION',
-    desc: 'Working together for safer, healthier and more dignified menstrual care for every woman.',
-    year: '2024',
-    logo: 'unicef-logo.png'
+    name: 'Winner — ReFlow Menstrual Health Innovation Hackathon',
+    badge: 'CHALLENGE WINNER',
+    desc: 'Won the ReFlow Menstrual Health Hackathon. The event was associated with IIT Bhubaneswar Research and Entrepreneurship Park.',
+    year: '2025',
+    logo: 'iit-bbs.webp'
+  },
+  {
+    name: 'SIIC IIT Kanpur — Advaya 2.0',
+    badge: 'PROGRAMME SELECTION',
+    desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur. Funding received through the programme.',
+    year: '2025',
+    logo: 'aic.jpeg'
+  },
+  {
+    name: 'TBI NIT Calicut — NIDHI-PRAYAS',
+    badge: 'GOVERNMENT-BACKED INNOVATION SUPPORT',
+    desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.',
+    year: '2025',
+    logo: 'stpi.webp'
+  },
+  {
+    name: 'IIM Calcutta Innovation Park — NIDHI-EIR',
+    badge: 'INNOVATION SUPPORT',
+    desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.',
+    year: '2025',
+    logo: 'stpi.webp'
+  },
+  {
+    name: 'STPI Bhubaneswar',
+    badge: 'GOVERNMENT TECHNOLOGY ECOSYSTEM',
+    desc: 'Recognised by STPI Bhubaneswar under their technology ecosystem programme.',
+    year: '2025',
+    logo: 'stpi.webp'
   },
 ];
 
@@ -50,12 +68,14 @@ const mediaMentions = [
 ];
 
 const milestones = [
-  { year: '2024', event: 'Incubated by AIC IIT Kottayam', desc: 'Began our innovation journey with strong mentorship and support.', icon: '🏆' },
-  { year: '2024', event: 'Research & Development', desc: 'Launched deep research in non-toxic, biodegradable materials.', icon: '🔬' },
-  { year: '2025', event: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. was officially incorporated.', icon: '🚀' },
-  { year: '2025', event: 'Hackathon Winner', desc: 'Won ReFlow Menstrual Health Hackathon by IIT BBS & UNICEF India.', icon: '👥' },
-  { year: '2025', event: 'Recognized by STPI & GUESSS', desc: 'Recognized for innovation and entrepreneurship excellence.', icon: '🏅' },
-  { year: 'Ongoing', event: 'Growing Impact, Scaling Solutions', desc: 'Continuing to innovate, collaborate and create real impact.', icon: '🌿' },
+  { year: '2024', event: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation. Began the formal EarthImpact innovation journey.', icon: '🚀' },
+  { year: '2024–25', event: 'Research & Development', desc: 'Deep research in non-toxic, biodegradable materials and early prototyping.', icon: '🔬' },
+  { year: 'Feb 2025', event: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. officially incorporated.', icon: '🏛️' },
+  { year: '2025', event: 'Winner — ReFlow Menstrual Health Hackathon', desc: 'Won the ReFlow Menstrual Health Innovation Hackathon.', icon: '🏆' },
+  { year: '2025', event: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0; funding received.', icon: '🎯' },
+  { year: '2025', event: 'TBI NIT Calicut — NIDHI-PRAYAS', desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.', icon: '🤝' },
+  { year: '2025', event: 'IIM Calcutta Innovation Park — NIDHI-EIR', desc: 'Received NIDHI-EIR support.', icon: '🏅' },
+  { year: '2025–26', event: 'GUESSS India & UnLtd India', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India.', icon: '🌍' },
 ];
 
 export default function AwardsMediaPage() {
@@ -78,9 +98,9 @@ export default function AwardsMediaPage() {
 
             <div className={styles.statsRow}>
               {[
-                { icon: '🏆', num: '15+', label: 'Awards & Recognitions' },
-                { icon: '📰', num: '20+', label: 'Media Mentions' },
-                { icon: '👥', num: '10+', label: 'Prestigious Platforms' },
+                { icon: '🚀', num: 'Selected', label: 'Recognitions' },
+                { icon: '🔬', num: 'NIDHI', label: 'PRAYAS & EIR Support' },
+                { icon: '🏆', num: 'Advaya', label: '2.0 IIT Kanpur' },
               ].map(({ icon, num, label }) => (
                 <div key={num} className={styles.miniStat}>
                   <span className={styles.miniStatIcon}>{icon}</span>

@@ -12,14 +12,13 @@ export const metadata = {
     default: 'EarthImpact Innovations – Biodegradable Sanitary Pads | Soham Srivastava',
     template: '%s | EarthImpact Innovations'
   },
-  description: 'EarthImpact Innovations Pvt. Ltd. creates non-toxic, endocrine-safe, biodegradable sanitary pads (Snowflakes) for women in India. Founded by Soham Srivastava, IIT Bhubaneswar. Safe for women & planet.',
+  description: 'EarthImpact Innovations Pvt. Ltd. develops safer, science-backed and sustainable solutions for women\'s health in India, starting with menstrual care. Founded by Soham Srivastava.',
   keywords: [
     'EarthImpact', 'Earth Impact', 'EarthImpact Innovations', 'EarthImpact Innovations Pvt Ltd',
-    'Soham Srivastava', 'Soham Srivastav', 'Soham Srivastava EarthImpact', 'Soham Srivastava IIT Bhubaneswar',
-    'Snowflakes pad', 'Snowflakes sanitary pad', 'biodegradable sanitary pad India',
+    'Soham Srivastava', 'Soham Srivastav', 'Soham Srivastava EarthImpact', 'EarthImpact Innovations founder', 'Snowflakes sanitary pad', 'biodegradable sanitary pad India',
     'non-toxic sanitary pad', 'eco-friendly menstrual pad', 'sustainable menstrual care India',
     'organic sanitary pad India', 'plastic-free sanitary pad', 'HemoSan hydrogel',
-    'menstrual health startup India', 'women health startup Bhubaneswar', 'IIT Bhubaneswar startup',
+    'menstrual health startup India', 'women health innovation India', 'biodegradable sanitary pad India',
     'UNICEF India partner', 'AIC IIT Kottayam startup', 'STPI recognized startup',
     'earthimpact.co.in', 'earthimpact innovations bhubaneswar odisha'
   ],
@@ -133,16 +132,16 @@ export default function RootLayout({ children }) {
                 "name": "Soham Srivastava",
                 "alternateName": "Soham Srivastav",
                 "jobTitle": "Founder & Chief Empathy Officer",
-                "affiliation": "IIT Bhubaneswar",
+                "affiliation": "EarthImpact Innovations Pvt. Ltd.",
                 "url": "https://earthimpact.co.in/soham-srivastava"
               },
               "foundingDate": "2025",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "IIT Bhubaneswar Research Park",
-                "addressLocality": "Bhubaneswar",
-                "addressRegion": "Odisha",
-                "postalCode": "751013",
+                "streetAddress": "TBI, NIT Calicut, NIT Campus P.O.",
+                "addressLocality": "Kozhikode",
+                "addressRegion": "Kerala",
+                "postalCode": "673601",
                 "addressCountry": "IN"
               },
               "contactPoint": {

@@ -193,11 +193,13 @@ export default function ContactPage() {
               </h2>
               <div className={styles.contactDetails}>
                 {[
-                  { icon: '✉️', label: 'Email Us', value: 'info@earthimpact.co.in' },
-                  { icon: '📞', label: 'Call Us', value: '+91 8881007017\n+91 9369416234' },
-                  { icon: '📍', label: 'Visit Us', value: 'IIT Bhubaneswar Research Park\nBhubaneswar, Odisha 751013, India' },
-                  { icon: '🌐', label: 'Website', value: 'www.earthimpactinnovations.com' },
-                  { icon: '💼', label: 'Follow Us', value: 'https://www.linkedin.com/in/namaste-soham' },
+                  { icon: '✉️', label: 'General Enquiries', value: 'info@earthimpact.co.in' },
+                  { icon: '💼', label: 'Founder', value: 'soham.srivastava@earthimpact.co.in' },
+                  { icon: '📍', label: 'R&D HQ', value: 'TBI, NIT Calicut\nNIT Campus P.O., Kozhikode\nKerala – 673601, India' },
+                  { icon: '🏢', label: 'Corporate / Registered HQ', value: 'Swami Vivekanand Puram\nKatai Mill, Banda\nUttar Pradesh – 210001, India' },
+                  { icon: '🌐', label: 'Website', value: 'www.earthimpact.co.in' },
+                  { icon: '💼', label: 'Follow EarthImpact', value: 'linkedin.com/company/earthimpact-innovations' },
+                  { icon: '💼', label: 'Founder LinkedIn', value: 'linkedin.com/in/namaste-soham' },
                 ].map(({ icon, label, value }) => (
                   <div key={label} className={styles.contactDetail}>
                     <div className={styles.detailIcon}>{icon}</div>
