@@ -4,17 +4,17 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'Our Story | EarthImpact Innovations',
-  description: 'Meet Soham Srivastava, founder of EarthImpact Innovations. Learn how a personal experience at IIT Bhubaneswar sparked a mission to create safe, biodegradable sanitary pads for women in India.',
+  description: 'Meet Soham Srivastava, founder of EarthImpact Innovations. Learn how a personal experience sparked a mission to create safe, biodegradable sanitary pads for women in India.',
   keywords: [
     'Soham Srivastava', 'Soham Srivastav', 'Soham Srivastava EarthImpact',
-    'EarthImpact Innovations founder', 'IIT Bhubaneswar entrepreneur',
+    'EarthImpact Innovations founder',
     'menstrual health innovator India', 'Snowflakes pad founder',
-    'sustainable startup Bhubaneswar Odisha', 'EarthImpact story'
+    'EarthImpact story'
   ],
   alternates: { canonical: 'https://earthimpact.co.in/our-story' },
   openGraph: {
     title: 'Our Story | EarthImpact Innovations',
-    description: 'Meet Soham Srivastava, founder of EarthImpact Innovations. From IIT Bhubaneswar to building India\'s safest biodegradable sanitary pad.',
+    description: 'Meet Soham Srivastava, founder of EarthImpact Innovations. Building India\'s safest biodegradable sanitary pad.',
     url: 'https://earthimpact.co.in/our-story',
     images: [{ url: 'https://earthimpact.co.in/images/founder/soham.jpg', alt: 'Soham Srivastava - Founder EarthImpact' }],
   }

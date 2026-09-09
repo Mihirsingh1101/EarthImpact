@@ -19,7 +19,7 @@ export const metadata = {
     'non-toxic sanitary pad', 'eco-friendly menstrual pad', 'sustainable menstrual care India',
     'organic sanitary pad India', 'plastic-free sanitary pad', 'HemoSan hydrogel',
     'menstrual health startup India', 'women health innovation India', 'biodegradable sanitary pad India',
-    'UNICEF India partner', 'AIC IIT Kottayam startup', 'STPI recognized startup',
+    'AIC IIIT Kottayam startup', 'STPI recognized startup',
     'earthimpact.co.in', 'earthimpact innovations bhubaneswar odisha'
   ],
   authors: [{ name: 'Soham Srivastava', url: 'https://earthimpact.co.in/our-story' }],

@@ -13,7 +13,7 @@ export const metadata = {
   alternates: { canonical: 'https://earthimpact.co.in/awards-media' },
   openGraph: {
     title: 'Awards & Recognition – EarthImpact Innovations',
-    description: 'Recognized by UNICEF India, IIT Bhubaneswar, STPI and AIC IIT Kottayam for innovation in women\'s health.',
+    description: 'Recognized by AIC-IIIT Kottayam, STPI and UnLtd India for innovation in women\'s health.',
     url: 'https://earthimpact.co.in/awards-media',
   }
 };

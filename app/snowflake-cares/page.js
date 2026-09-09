@@ -3,27 +3,27 @@ import Footer from '@/components/Footer';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Snowflake Cares | EarthImpact Innovations',
-  description: 'Snowflakes by EarthImpact is India\'s first HemoSan-powered, plastic-free, biodegradable sanitary pad. Non-toxic, endocrine-safe, anti-bacterial and compostable. Safe for women, safe for the planet.',
+  title: 'Snowflake | EarthImpact Innovations',
+  description: 'Snowflakes by EarthImpact is India\'s first HemoSan-powered, plastic-free, biodegradable sanitary pad. Material-safety focus and compostable. Safe for women, safe for the planet.',
   keywords: [
     'Snowflakes pad', 'Snowflakes sanitary pad India', 'biodegradable sanitary pad',
     'non-toxic sanitary pad India', 'plastic-free period pad', 'HemoSan pad',
     'organic menstrual pad India', 'eco-friendly sanitary pad', 'EarthImpact Snowflakes'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/snowflake-cares' },
+  alternates: { canonical: 'https://earthimpact.co.in/snowflake' },
   openGraph: {
     title: 'Snowflakes – India\'s Safest Biodegradable Sanitary Pad',
     description: 'Snowflakes: HemoSan-powered, plastic-free, biodegradable sanitary pads by EarthImpact Innovations. Safe for every woman.',
-    url: 'https://earthimpact.co.in/snowflake-cares',
+    url: 'https://earthimpact.co.in/snowflake',
     images: [{ url: 'https://earthimpact.co.in/images/products/pad-product.png', alt: 'Snowflakes Biodegradable Sanitary Pad' }],
   }
 };
 
 const whatMakesSnowflakeDifferent = [
-  { icon: '🌿', title: 'Non-Toxic & Endocrine-Safe', desc: 'Free from harmful chemicals, irritants and allergens.' },
+  { icon: '🌿', title: 'Material-Safety Focus', desc: 'Free from harmful chemicals, irritants and allergens.' },
   { icon: '🩹', title: 'Plastic-Free Every Layer', desc: 'No plastic sheets, no petroleum-based materials.' },
   { icon: '♻️', title: 'Biodegradable & Compostable', desc: 'Breaks down naturally without leaving behind lasting harm.' },
-  { icon: '🛡️', title: 'Anti-Fungal & Anti-Microbial', desc: 'Helps prevent infections & keeps you fresh.' },
+  { icon: '🛡️', title: 'Hygiene-Focused Materials', desc: 'Helps prevent infections & keeps you fresh.' },
   { icon: '💧', title: 'High Absorbency & Leak Protection', desc: 'Advanced core technology for superior absorption & safety.' },
   { icon: '🤝', title: 'Made with Responsibility', desc: 'Sustainably sourced materials with minimal environmental impact.' },
 ];
@@ -85,11 +85,7 @@ export default function SnowflakeCaresPage() {
             {/* Center pad image */}
             <div className={styles.padImage}>
               <div className={styles.padOval}>
-                <svg width="160" height="220" viewBox="0 0 160 220" fill="none">
-                  <ellipse cx="80" cy="110" rx="65" ry="100" fill="white" stroke="#e8e3d8" strokeWidth="2"/>
-                  <ellipse cx="80" cy="110" rx="48" ry="83" fill="#f9f7f3" stroke="#e0dcd2" strokeWidth="1"/>
-                  <ellipse cx="80" cy="110" rx="30" ry="65" fill="#f5f3ef"/>
-                </svg>
+                {/* Oval shape removed */}
                 <div className={styles.padLeaves}>
                   <svg width="70" height="90" viewBox="0 0 70 90" fill="none">
                     <path d="M35 5 Q58 18 55 50 Q52 72 35 78 Q18 72 15 50 Q12 18 35 5Z" fill="#5A7A5C" opacity="0.7"/>
@@ -141,9 +137,9 @@ export default function SnowflakeCaresPage() {
             </div>
             <div className={styles.statsRow}>
               {[
-                { icon: '🧪', num: '20+', label: 'Harmful EDCs & VOCs chemicals & allergens in conventional pads' },
-                { icon: '🗑️', num: '~1.5 Lakh Tonnes', label: 'of menstrual waste generated annually in India' },
-                { icon: '⏳', num: '450–800 Years', label: 'for a single pad to decompose' },
+                { icon: '🧪', num: '12', label: 'Phthalate types detected in conventional pads' },
+                { icon: '🗑️', num: '~1.13 Lakh Tonnes', label: 'of menstrual waste generated annually in India' },
+                { icon: '⏳', num: 'Centuries', label: 'for a single pad to decompose in a landfill' },
                 { icon: '🌊', num: 'Deep Impact', label: 'Plastic pollution chokes water bodies, harms aquatic life & damages ecosystems' },
               ].map(({ icon, num, label }) => (
                 <div key={num} className={styles.statBox}>

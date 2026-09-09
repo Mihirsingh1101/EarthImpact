@@ -31,10 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo}>
           <div className={styles.logoIcon}>
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <path d="M14 2C14 2 8 8 8 15a6 6 0 0012 0C20 8 14 2 14 2z" fill="#2C3D2E"/>
-              <path d="M14 8C14 8 10 12 10 17a4 4 0 008 0C18 12 14 8 14 8z" fill="#4A6050"/>
-            </svg>
+            <img src="/logo.png" alt="EarthImpact Logo" width="36" height="36" style={{ objectFit: 'contain', borderRadius: '4px' }} />
           </div>
           <div className={styles.logoText}>
             <span className={styles.logoMain}>earth</span>
