@@ -5,11 +5,11 @@ import styles from './page.module.css';
 export const metadata = {
   title: 'What Are Endocrine-Disrupting Chemicals (EDCs)? | EarthImpact Insights',
   description: 'EDCs are chemicals that interfere with the body\'s hormonal system. Many are found in conventional sanitary pads. Learn what the science says and what safer alternatives look like.',
-  alternates: { canonical: 'https://earthimpact.co.in/insights/what-are-edcs' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/insights/what-are-edcs' },
   openGraph: {
     title: 'What Are Endocrine-Disrupting Chemicals (EDCs)? | EarthImpact Insights',
     description: 'EDCs in everyday menstrual products — what they are, how they work, and why EarthImpact is building around them.',
-    url: 'https://earthimpact.co.in/insights/what-are-edcs',
+    url: 'https://www.earthimpact.co.in/insights/what-are-edcs',
   },
 };
 
@@ -24,12 +24,12 @@ export default function WhatAreEDCsPage() {
     "author": {
       "@type": "Person",
       "name": "Soham Srivastava",
-      "url": "https://earthimpact.co.in/soham-srivastava"
+      "url": "https://www.earthimpact.co.in/soham-srivastava"
     },
     "publisher": {
-      "@id": "https://earthimpact.co.in/#organization"
+      "@id": "https://www.earthimpact.co.in/#organization"
     },
-    "mainEntityOfPage": "https://earthimpact.co.in/insights/what-are-edcs"
+    "mainEntityOfPage": "https://www.earthimpact.co.in/insights/what-are-edcs"
   };
 
   return (
@@ -119,13 +119,13 @@ export default function WhatAreEDCsPage() {
               <div className={styles.callout}>
                 <span className={styles.calloutIcon}>🔬</span>
                 <p>
-                  <strong>What the data shows:</strong> Conventional sanitary pads have been found to contain over 20 potentially harmful chemicals, including EDCs, VOCs and allergens. The long-term health effects of cumulative low-dose exposure remain an area of active research.
+                  <strong>What the research has found:</strong> Studies have detected phthalates, VOCs, dioxins and other potentially concerning chemicals in commercially available menstrual products. The Toxics Link 2022 report identified 12 different phthalate types in all tested sanitary-pad samples. The long-term health implications of cumulative exposure during use remain an area of active research.
                 </p>
               </div>
 
-              <h2>What Does "Endocrine-Safe" Mean?</h2>
+              <h2>What Does "Designing for Endocrine Safety" Mean?</h2>
               <p>
-                An endocrine-safe product is designed and formulated to avoid chemicals that are known or suspected to disrupt hormonal function. This typically means:
+                Designing for endocrine safety means formulating a product to avoid chemicals that are known or suspected to disrupt hormonal function. This is a design and materials principle, not a therapeutic claim. It typically means:
               </p>
               <ul className={styles.list}>
                 <li>Avoiding phthalates, BPA, dioxins, parabens and synthetic fragrances</li>
@@ -134,7 +134,7 @@ export default function WhatAreEDCsPage() {
                 <li>Minimising the use of synthetic adhesives and chemical coatings</li>
               </ul>
               <p>
-                At EarthImpact, designing for endocrine safety is a core principle — not a marketing claim. Our Snowflake pad is built around materials selected specifically to avoid known EDC sources.
+                At EarthImpact, this is a core design principle — not a finished-product certification. Snowflake is built around materials selected specifically to avoid known EDC sources, as part of our ongoing research and validation process.
               </p>
 
               <h2>The Regulatory Gap</h2>
@@ -159,10 +159,10 @@ export default function WhatAreEDCsPage() {
               {/* CTA */}
               <div className={styles.articleCta}>
                 <p className={styles.ctaText}>
-                  Learn how Snowflake by EarthImpact is designed to be non-toxic, endocrine-safe and plastic-free.
+                  Learn about Snowflake — EarthImpact's science-backed, plastic-free and biodegradable sanitary pad.
                 </p>
-                <Link href="/snowflake-cares" className="btn btn-primary">
-                  Explore Snowflake Cares →
+                <Link href="/snowflake" className="btn btn-primary">
+                  Explore Snowflake →
                 </Link>
               </div>
 
@@ -200,8 +200,8 @@ export default function WhatAreEDCsPage() {
               </div>
               <div className={styles.sidebarCard}>
                 <p className={styles.sidebarTitle}>Explore Snowflake</p>
-                <p className={styles.sidebarText}>Our non-toxic, endocrine-safe and biodegradable sanitary pad.</p>
-                <Link href="/snowflake-cares" className={`btn btn-primary ${styles.sidebarBtn}`}>
+                <p className={styles.sidebarText}>Our science-backed, plastic-free and biodegradable sanitary pad.</p>
+                <Link href="/snowflake" className={`btn btn-primary ${styles.sidebarBtn}`}>
                   Learn More →
                 </Link>
               </div>

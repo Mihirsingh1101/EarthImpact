@@ -5,11 +5,11 @@ import styles from './page.module.css';
 export const metadata = {
   title: 'Insights | EarthImpact Innovations',
   description: 'Evidence-based articles on menstrual health, sustainable materials, endocrine-disrupting chemicals and biodegradable menstrual care — by EarthImpact Innovations.',
-  alternates: { canonical: 'https://earthimpact.co.in/insights' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/insights' },
   openGraph: {
     title: 'Insights | EarthImpact Innovations',
     description: 'Evidence-based articles on menstrual health, EDCs, sustainable materials and biodegradable menstrual care.',
-    url: 'https://earthimpact.co.in/insights',
+    url: 'https://www.earthimpact.co.in/insights',
   },
 };
 

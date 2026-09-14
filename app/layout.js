@@ -7,7 +7,7 @@ const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 
 export const metadata = {
-  metadataBase: new URL('https://earthimpact.co.in'),
+  metadataBase: new URL('https://www.earthimpact.co.in'),
   title: {
     default: 'EarthImpact Innovations – Biodegradable Sanitary Pads | Soham Srivastava',
     template: '%s | EarthImpact Innovations'
@@ -22,21 +22,21 @@ export const metadata = {
     'AIC IIIT Kottayam startup', 'STPI recognized startup',
     'earthimpact.co.in', 'earthimpact innovations bhubaneswar odisha'
   ],
-  authors: [{ name: 'Soham Srivastava', url: 'https://earthimpact.co.in/our-story' }],
+  authors: [{ name: 'Soham Srivastava', url: 'https://www.earthimpact.co.in/our-story' }],
   creator: 'EarthImpact Innovations Pvt. Ltd.',
   publisher: 'EarthImpact Innovations Pvt. Ltd.',
   category: 'Health & Wellness',
   alternates: {
-    canonical: 'https://earthimpact.co.in',
+    canonical: 'https://www.earthimpact.co.in',
   },
   openGraph: {
-    title: 'EarthImpact Innovations – Biodegradable Sanitary Pads for Women',
-    description: 'EarthImpact creates non-toxic, endocrine-safe and biodegradable sanitary pads (Snowflakes). Safe for women & gentle on the planet. Founded by Soham Srivastava.',
-    url: 'https://earthimpact.co.in',
+    title: 'EarthImpact Innovations – Safer, Science-Backed Sanitary Pads for Women',
+    description: 'EarthImpact creates science-backed, plastic-free and biodegradable sanitary pads (Snowflakes), formulated with material-safety focus. Founded by Soham Srivastava.',
+    url: 'https://www.earthimpact.co.in',
     siteName: 'EarthImpact Innovations',
     images: [
       {
-        url: 'https://earthimpact.co.in/images/products/pad-product.png',
+        url: 'https://www.earthimpact.co.in/images/products/pad-product.png',
         width: 1200,
         height: 630,
         alt: 'EarthImpact Snowflakes – Biodegradable Sanitary Pads',
@@ -47,9 +47,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EarthImpact Innovations – Biodegradable Sanitary Pads',
-    description: 'Non-toxic, endocrine-safe, biodegradable menstrual pads by Soham Srivastava.',
-    images: ['https://earthimpact.co.in/images/products/pad-product.png'],
+    title: 'EarthImpact Innovations – Safer Sanitary Pads',
+    description: 'Science-backed, plastic-free and biodegradable menstrual pads by Soham Srivastava. Designed with material-safety focus.',
+    images: ['https://www.earthimpact.co.in/images/products/pad-product.png'],
   },
   robots: {
     index: true,
@@ -120,20 +120,20 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://earthimpact.co.in/#organization",
+              "@id": "https://www.earthimpact.co.in/#organization",
               "name": "EarthImpact Innovations Pvt. Ltd.",
               "alternateName": ["EarthImpact", "Earth Impact Innovations"],
-              "url": "https://earthimpact.co.in",
-              "logo": "https://earthimpact.co.in/icon.svg",
-              "image": "https://earthimpact.co.in/images/products/pad-product.png",
-              "description": "EarthImpact Innovations creates non-toxic, endocrine-safe and biodegradable sanitary pads for women in India.",
+              "url": "https://www.earthimpact.co.in",
+              "logo": "https://www.earthimpact.co.in/logo.png",
+              "image": "https://www.earthimpact.co.in/images/products/pad-product.png",
+              "description": "EarthImpact Innovations develops safer, science-backed and sustainable solutions for women's menstrual health in India, starting with Snowflake — a plastic-free, biodegradable sanitary pad.",
               "founder": {
                 "@type": "Person",
                 "name": "Soham Srivastava",
                 "alternateName": "Soham Srivastav",
                 "jobTitle": "Founder & Chief Empathy Officer",
-                "affiliation": "EarthImpact Innovations Pvt. Ltd.",
-                "url": "https://earthimpact.co.in/soham-srivastava"
+                "worksFor": { "@id": "https://www.earthimpact.co.in/#organization" },
+                "url": "https://www.earthimpact.co.in/soham-srivastava"
               },
               "foundingDate": "2025",
               "address": {
@@ -146,13 +146,12 @@ export default function RootLayout({ children }) {
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-8881007017",
                 "contactType": "customer service",
                 "email": "info@earthimpact.co.in",
                 "availableLanguage": ["English", "Hindi"]
               },
               "sameAs": [
-                "https://www.linkedin.com/company/earthimpact",
+                "https://www.linkedin.com/company/earthimpact-innovations-pvt-ltd",
                 "https://www.linkedin.com/in/namaste-soham",
                 "https://www.instagram.com/earthimpact.innovations"
               ]
@@ -167,13 +166,13 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "EarthImpact Innovations",
-              "url": "https://earthimpact.co.in",
-              "description": "Biodegradable sanitary pads and sustainable menstrual care by EarthImpact Innovations.",
+              "url": "https://www.earthimpact.co.in",
+              "description": "Science-backed, plastic-free and biodegradable sanitary pads by EarthImpact Innovations. Designed for safer menstrual care in India.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://earthimpact.co.in/?q={search_term_string}"
+                  "urlTemplate": "https://www.earthimpact.co.in/?q={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }

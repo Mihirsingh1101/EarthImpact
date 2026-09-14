@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://earthimpact.co.in/sitemap.xml',
+    sitemap: 'https://www.earthimpact.co.in/sitemap.xml',
   };
 }

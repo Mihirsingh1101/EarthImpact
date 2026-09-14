@@ -5,7 +5,7 @@ import styles from './page.module.css';
 export const metadata = {
   title: 'EarthImpact Innovations | Safer Solutions for Women & Our Planet',
   description: 'EarthImpact Innovations develops safer, science-backed and sustainable solutions for women\'s health, starting with menstrual care.',
-  alternates: { canonical: 'https://earthimpact.co.in' },
+  alternates: { canonical: 'https://www.earthimpact.co.in' },
 };
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
             <span className={styles.goldStar}>✦</span>
           </h1>
           <p className={styles.heroDesc}>
-            We create non-toxic, endocrine-safe and biodegradable solutions for menstrual care that are safe for women and gentle on the environment.
+            We develop safer, science-backed and sustainable solutions for menstrual care — formulated with material-safety focus, designed to reduce plastic waste, and built for every woman.
           </p>
           <div className={styles.heroBtns}>
             <Link href="/snowflake-cares" className="btn btn-primary">
@@ -66,7 +66,7 @@ export default function HomePage() {
               Better for You, Better for Earth
             </li>
           </ul>
-          <Link href="/snowflake-cares" className={styles.snowflakeBtn}>
+          <Link href="/snowflake" className={styles.snowflakeBtn}>
             Explore Snowflake →
           </Link>
         </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <Link href="/snowflake-cares" className="btn btn-primary">
+              <Link href="/snowflake" className="btn btn-primary">
                 Discover Snowflake →
               </Link>
             </div>

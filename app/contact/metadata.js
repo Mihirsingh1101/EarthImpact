@@ -8,10 +8,10 @@ export const metadata = {
     'Soham Srivastava contact', 'earthimpact.co.in contact',
     'menstrual health startup partnership India'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/contact' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/contact' },
   openGraph: {
     title: 'Contact EarthImpact Innovations',
     description: 'Reach out for partnerships, investment or media. Contact Soham Srivastava at info@earthimpact.co.in.',
-    url: 'https://earthimpact.co.in/contact',
+    url: 'https://www.earthimpact.co.in/contact',
   }
 };

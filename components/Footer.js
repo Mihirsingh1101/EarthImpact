@@ -39,7 +39,8 @@ export default function Footer() {
         <div className={styles.col}>
           <h4 className={styles.colTitle}>Our Solutions</h4>
           <ul className={styles.linkList}>
-            <li><Link href="/snowflake-cares">Snowflake Sanitary Pads</Link></li>
+            <li><Link href="/snowflake">Snowflake — The Product</Link></li>
+            <li><Link href="/snowflake-cares">Snowflake Cares</Link></li>
             <li><Link href="/insights">Insights &amp; Research</Link></li>
             <li><Link href="/contact">Partner with Us</Link></li>
           </ul>

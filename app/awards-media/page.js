@@ -10,11 +10,11 @@ export const metadata = {
     'SIIC IIT Kanpur Advaya 2.0', 'TBI NIT Calicut NIDHI-PRAYAS', 'IIM Calcutta NIDHI-EIR',
     'STPI Bhubaneswar recognition', 'GUESSS India entrepreneur', 'EarthImpact recognition', 'Soham Srivastava awards'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/awards-media' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/awards-media' },
   openGraph: {
     title: 'Awards & Recognition – EarthImpact Innovations',
     description: 'Recognized by AIC-IIIT Kottayam, STPI and UnLtd India for innovation in women\'s health.',
-    url: 'https://earthimpact.co.in/awards-media',
+    url: 'https://www.earthimpact.co.in/awards-media',
   }
 };
 
@@ -24,14 +24,32 @@ const recognitions = [
     badge: 'INCUBATION SUPPORT',
     desc: 'First pre-incubation. EarthImpact was pre-incubated at AIC-IIIT Kottayam, marking the formal start of the company\'s innovation journey.',
     year: '2024',
-    logo: 'aic.jpeg'
+    logo: 'aic.jpeg',
+    hoverImage: 'Awarded by AIC IIITK.JPG.jpeg'
   },
   {
     name: 'Winner — ReFlow Menstrual Health Innovation Hackathon',
     badge: 'CHALLENGE WINNER',
-    desc: 'Won the ReFlow Menstrual Health Hackathon. The event was associated with IIT Bhubaneswar Research and Entrepreneurship Park.',
+    desc: 'Won the ReFlow Menstrual Health Hackathon 2025 — a recognition for innovation in menstrual health and sustainable product development.',
     year: '2025',
-    logo: 'iit-bbs.webp'
+    logo: 'iit-bbs.webp',
+    hoverImage: 'Winner of ReFlow Hackathon by IIT Bhubaneswar.jpg'
+  },
+  {
+    name: 'Appreciation from HOD Gynae Dept, AIIMS Patna',
+    badge: 'RECOGNITION',
+    desc: 'Awarded by Dr. Mukta, Head of Department of Gynaecology, AIIMS Patna.',
+    year: '2024',
+    logo: 'aic.jpeg', // Fallback incubator/logo 
+    hoverImage: 'Awarded by Dr. Mukta AIIMS Patna HOD Gynae Dept..JPG.jpeg'
+  },
+  {
+    name: '30 Under 30',
+    badge: 'FOUNDER RECOGNITION',
+    desc: 'Soham Srivastava featured on the 30 Under 30 cover page.',
+    year: '2025',
+    logo: 'yourstory.webp',
+    hoverImage: 'Soham 30 under 30 cover page.jpg'
   },
   {
     name: 'SIIC IIT Kanpur — Advaya 2.0',
@@ -120,15 +138,22 @@ export default function AwardsMediaPage() {
         <div className="container">
           <p className={styles.recTag}>🌿 &nbsp; FEATURED RECOGNITIONS</p>
           <div className={styles.recGrid}>
-            {recognitions.map(({ name, badge, desc, year, logo }) => (
+            {recognitions.map(({ name, badge, desc, year, logo, hoverImage }) => (
               <div key={name} className={styles.recCard}>
-                <div className={styles.recCardTop}>
-                  <img src={`/images/logos/incubators/${logo}`} alt={name} className={styles.recImg} />
+                <div className={styles.recCardInner}>
+                  <div className={styles.recCardTop}>
+                    <img src={`/images/logos/incubators/${logo}`} alt={name} className={styles.recImg} />
+                  </div>
+                  <p className={styles.recName}>{name}</p>
+                  <span className={styles.recBadge}>{badge}</span>
+                  <p className={styles.recDesc}>{desc}</p>
+                  <p className={styles.recYear}>{year}</p>
                 </div>
-                <p className={styles.recName}>{name}</p>
-                <span className={styles.recBadge}>{badge}</span>
-                <p className={styles.recDesc}>{desc}</p>
-                <p className={styles.recYear}>{year}</p>
+                {hoverImage && (
+                  <div className={styles.recHoverImgContainer}>
+                    <img src={`/images/awards/${hoverImage}`} alt={`${name} recognition photo`} className={styles.recHoverImg} />
+                  </div>
+                )}
               </div>
             ))}
           </div>

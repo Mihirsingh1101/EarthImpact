@@ -1,0 +1,352 @@
+/* ===================== HERO ===================== */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(74, 96, 80, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+}
+
+.heroLeft { max-width: 560px; }
+
+.heroTitle {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 20px;
+}
+
+.heroAccent { color: var(--pink); }
+
+.heroDesc {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.devBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--forest);
+  background: rgba(74, 96, 80, 0.08);
+  border: 1px solid rgba(74, 96, 80, 0.2);
+  border-radius: 100px;
+  padding: 8px 16px;
+  margin-bottom: 28px;
+  width: fit-content;
+}
+
+.devDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--forest);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.heroBtns { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.padImageWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padImage {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 24px;
+  filter: drop-shadow(0 20px 60px rgba(74, 96, 80, 0.15));
+}
+
+/* ===================== SHARED SECTION STYLES ===================== */
+.sectionHeader { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+
+.sectionTitle {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--forest);
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.sectionDesc {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+
+/* ===================== WHY ===================== */
+.whySection { background: #fff; }
+
+/* ===================== CONSTRUCTION ===================== */
+.construction { background: var(--cream); }
+
+.layerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.layerCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 16px rgba(74, 96, 80, 0.07);
+}
+
+.layerNum {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(74, 96, 80, 0.15);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.layerTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 8px;
+}
+
+.layerDesc { font-size: 0.9rem; color: #666; line-height: 1.65; }
+
+/* ===================== HEMOSAN ===================== */
+.hemosan { background: #fff; }
+
+.hemosanGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hemosanTitle {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--forest);
+  margin: 8px 0 16px;
+}
+
+.hemosanAccent { color: var(--pink); }
+
+.hemosanDesc { font-size: 0.97rem; color: #666; line-height: 1.75; margin-bottom: 12px; }
+
+.hemosanBadge {
+  display: inline-block;
+  background: rgba(74, 96, 80, 0.08);
+  border: 1px solid rgba(74, 96, 80, 0.2);
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 6px 16px;
+  margin-top: 8px;
+}
+
+.hemosanFeature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hemosanIcon { font-size: 1.8rem; flex-shrink: 0; }
+
+.hemosanFeatureLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 2px;
+}
+
+.hemosanFeatureSub { font-size: 0.88rem; color: #777; }
+
+/* ===================== MATERIALS ===================== */
+.materials { background: var(--cream); }
+
+.materialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.materialCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 16px rgba(74, 96, 80, 0.07);
+  transition: transform 0.2s;
+}
+
+.materialCard:hover { transform: translateY(-3px); }
+
+.materialIcon { font-size: 2rem; margin-bottom: 12px; }
+
+.materialTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 8px;
+}
+
+.materialDesc { font-size: 0.9rem; color: #666; line-height: 1.65; }
+
+/* ===================== DEVELOPMENT STATUS ===================== */
+.devStatus { background: #fff; }
+
+.stageTrack {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin: 40px auto 32px;
+  max-width: 700px;
+  position: relative;
+}
+
+.stageTrack::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: 40px;
+  height: 2px;
+  background: rgba(74, 96, 80, 0.15);
+  z-index: 0;
+}
+
+.stageItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.stageDot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #e8e3d8;
+  color: #aaa;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.stageDone {
+  background: var(--forest);
+  color: #fff;
+}
+
+.stageCurrent {
+  background: var(--pink);
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(199, 111, 141, 0.2);
+}
+
+.stageLabel {
+  font-size: 0.78rem;
+  color: #aaa;
+  font-weight: 500;
+  text-align: center;
+}
+
+.stageLabelActive {
+  color: var(--forest);
+  font-weight: 700;
+}
+
+.devNote {
+  text-align: center;
+  font-size: 0.88rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===================== CTA ===================== */
+.cta {
+  background: var(--forest);
+  padding: 72px 0;
+}
+
+.ctaGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.ctaTitle {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.ctaDesc { font-size: 1rem; color: rgba(255,255,255,0.75); line-height: 1.65; }
+
+.ctaBtns { display: flex; gap: 16px; flex-shrink: 0; flex-wrap: wrap; }
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+  .heroContent { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .heroLeft { max-width: 100%; }
+  .devBadge { margin: 0 auto 28px; }
+  .heroBtns { justify-content: center; }
+  .padImageWrap { order: -1; }
+  .hemosanGrid { grid-template-columns: 1fr; gap: 40px; }
+  .ctaGrid { grid-template-columns: 1fr; }
+  .ctaBtns { justify-content: flex-start; }
+}
+
+@media (max-width: 768px) {
+  .hero { padding-top: 80px; }
+  .heroContent { padding: 0 20px; }
+  .stageTrack { flex-wrap: wrap; gap: 16px; }
+  .stageTrack::before { display: none; }
+  .layerGrid, .materialGrid { grid-template-columns: 1fr; }
+}

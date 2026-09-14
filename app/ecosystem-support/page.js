@@ -10,11 +10,11 @@ export const metadata = {
     'SIIC IIT Kanpur', 'IIM Calcutta Innovation Park', 'UnLtd India',
     'menstrual health startup incubator India', 'NIDHI-PRAYAS', 'NIDHI-EIR'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/ecosystem-support' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/ecosystem-support' },
   openGraph: {
     title: 'Ecosystem Support & Networks | EarthImpact Innovations',
     description: 'EarthImpact is supported by AIC-IIIT Kottayam, TBI NIT Calicut, SIIC IIT Kanpur, IIM Calcutta Innovation Park, UnLtd India and STPI Bhubaneswar.',
-    url: 'https://earthimpact.co.in/ecosystem-support',
+    url: 'https://www.earthimpact.co.in/ecosystem-support',
   }
 };
 

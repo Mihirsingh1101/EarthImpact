@@ -11,12 +11,12 @@ export const metadata = {
     'menstrual health innovator India', 'Snowflakes pad founder',
     'EarthImpact story'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/our-story' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/our-story' },
   openGraph: {
     title: 'Our Story | EarthImpact Innovations',
     description: 'Meet Soham Srivastava, founder of EarthImpact Innovations. Building India\'s safest biodegradable sanitary pad.',
-    url: 'https://earthimpact.co.in/our-story',
-    images: [{ url: 'https://earthimpact.co.in/images/founder/soham.jpg', alt: 'Soham Srivastava - Founder EarthImpact' }],
+    url: 'https://www.earthimpact.co.in/our-story',
+    images: [{ url: 'https://www.earthimpact.co.in/images/founder/soham.jpg', alt: 'Soham Srivastava - Founder EarthImpact' }],
   }
 };
 
@@ -75,7 +75,7 @@ export default function OurStoryPage() {
               "@type": "Organization",
               "name": "EarthImpact Innovations Pvt. Ltd."
             },
-            "url": "https://earthimpact.co.in/our-story",
+            "url": "https://www.earthimpact.co.in/our-story",
             "description": "Founder of EarthImpact Innovations, focusing on safe, non-toxic, and sustainable menstrual care."
           })
         }}
@@ -174,7 +174,7 @@ export default function OurStoryPage() {
                 {
                   icon: '🛡️',
                   title: 'Our Mission',
-                  desc: 'To innovate and deliver non-toxic, endocrine-safe and biodegradable products that improve women\'s health and reduce environmental harm.',
+                  desc: 'To innovate and deliver safer, science-backed and biodegradable products that improve women\'s health and reduce environmental harm — formulated to avoid chemicals of concern.',
                 },
                 {
                   icon: '👁️',
@@ -215,6 +215,35 @@ export default function OurStoryPage() {
             We are just getting started.<br />
             The best impact is yet to come.
           </p>
+        </div>
+      </section>
+
+      {/* ===================== OUR TEAM ===================== */}
+      <section className={styles.teamSection}>
+        <div className="container">
+          <div className={styles.teamHeader}>
+            <p className="section-tag">OUR TEAM 🌿</p>
+            <h2 className={styles.teamTitle}>The people building EarthImpact.</h2>
+          </div>
+          <div className={styles.teamGrid}>
+            <div className={styles.teamCard}>
+              <div className={styles.teamPhotoWrap}>
+                <img
+                  src="/images/founder/soham.jpg"
+                  alt="Soham Srivastava — Founder, EarthImpact Innovations"
+                  className={styles.teamPhoto}
+                />
+              </div>
+              <h3 className={styles.teamName}>Soham Srivastava</h3>
+              <p className={styles.teamRole}>Founder &amp; Chief Empathy Officer</p>
+              <p className={styles.teamLine}>
+                Building EarthImpact at the intersection of materials, women&apos;s health and sustainability.
+              </p>
+              <a href="/soham-srivastava" className={`btn btn-primary ${styles.teamBtn}`}>
+                View Founder Profile →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -10,12 +10,12 @@ export const metadata = {
     'non-toxic sanitary pad India', 'plastic-free period pad', 'HemoSan pad',
     'organic menstrual pad India', 'eco-friendly sanitary pad', 'EarthImpact Snowflakes'
   ],
-  alternates: { canonical: 'https://earthimpact.co.in/snowflake' },
+  alternates: { canonical: 'https://www.earthimpact.co.in/snowflake' },
   openGraph: {
     title: 'Snowflakes – India\'s Safest Biodegradable Sanitary Pad',
     description: 'Snowflakes: HemoSan-powered, plastic-free, biodegradable sanitary pads by EarthImpact Innovations. Safe for every woman.',
-    url: 'https://earthimpact.co.in/snowflake',
-    images: [{ url: 'https://earthimpact.co.in/images/products/pad-product.png', alt: 'Snowflakes Biodegradable Sanitary Pad' }],
+    url: 'https://www.earthimpact.co.in/snowflake',
+    images: [{ url: 'https://www.earthimpact.co.in/images/products/pad-product.png', alt: 'Snowflakes Biodegradable Sanitary Pad' }],
   }
 };
 
