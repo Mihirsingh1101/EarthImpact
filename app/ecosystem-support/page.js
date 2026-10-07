@@ -20,20 +20,23 @@ export const metadata = {
 
 const incubators = [
   { name: 'AIC-IIIT Kottayam', tagline: 'Pre-incubated by', logo: 'aic.jpeg' },
-  { name: 'SIIC IIT Kanpur', tagline: 'Selected under Advaya 2.0; funding received', logo: 'aic.jpeg' },
-  { name: 'TBI NIT Calicut', tagline: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: 'stpi.webp' },
-  { name: 'IIM Calcutta Innovation Park', tagline: 'NIDHI-EIR support', logo: 'stpi.webp' },
+  { name: 'SIIC IIT Kanpur', tagline: 'Selected under Advaya 2.0; CSR funding received from Pernod Richard India Foundation', logo: 'siic-iit kanpur.webp' },
+  { name: 'TBI NIT Calicut', tagline: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: 'tbi nitc logo.jpeg' },
+  { name: 'IIM Calcutta Innovation Park', tagline: 'NIDHI-EIR support', logo: 'iimcip logo.jpeg' },
   { name: 'UnLtd India', tagline: 'Social Enterprise Support', logo: 'unltd.jpg' },
   { name: 'STPI Bhubaneswar', tagline: 'Technology Ecosystem Support', logo: 'stpi.webp' },
 ];
 
 const ecosystemTimeline = [
-  { year: '2024', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation — marked the beginning of the formal EarthImpact journey.' },
-  { year: '2024–25', title: 'Research & Prototype Development', desc: 'Deep research, material innovation and early prototyping at NIT Calicut.' },
-  { year: '2025', title: 'ReFlow Hackathon Winner', desc: 'Won ReFlow Menstrual Health Innovation Hackathon.' },
-  { year: 'Feb 2025', title: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. officially incorporated.' },
-  { year: '2025', title: 'NIDHI-PRAYAS & NIDHI-EIR', desc: 'Received NIDHI-PRAYAS through TBI NIT Calicut and NIDHI-EIR through IIM Calcutta Innovation Park.' },
-  { year: '2025–26', title: 'GUESSS India & UnLtd India Recognition', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India.' },
+  { year: '2026', title: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0; CSR funding received from Pernod Richard India Foundation.', icon: '🎯' },
+  { year: '2025', title: 'UnLtd India Fellow', desc: 'Supported by UnLtd India.', icon: '🌱' },
+  { year: '2025', title: 'GUESSS India Entrepreneur', desc: 'Recognised as GUESSS India Entrepreneur (ProBono).', icon: '🌍' },
+  { year: '2025', title: 'NIDHI-PRAYAS', desc: 'Received NIDHI-PRAYAS through TBI NIT Calicut.', icon: '🤝' },
+  { year: 'Feb 2025', title: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. officially incorporated.', icon: '🏛️' },
+  { year: '2025', title: 'ReFlow Hackathon Winner', desc: 'Won ReFlow Menstrual Health Innovation Hackathon.', icon: '🏆' },
+  { year: '2024-present', title: '2+ Years of R&D', desc: 'Deep research, material innovation and early prototyping at NIT Calicut.', icon: '🔬' },
+  { year: '2024', title: 'IIMCIP: NIDHI EIR', desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.', icon: '🏅' },
+  { year: '2024', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation — marked the beginning of the formal EarthImpact journey.', icon: '🌱' },
 ];
 
 const networkCategories = [
@@ -132,11 +135,11 @@ export default function EcosystemSupportPage() {
           <p className={styles.timelineTag}>OUR JOURNEY WITH THE ECOSYSTEM</p>
           <div className={styles.timelineTrack}>
             <div className={styles.timelineLine}></div>
-            {ecosystemTimeline.map(({ year, title, desc }, i) => (
+            {ecosystemTimeline.map(({ year, title, desc, icon }, i) => (
               <div key={i} className={styles.timelineItem}>
                 <div className={styles.timelineDot}>
                   <div className={styles.timelineIcon}>
-                    {['🌱','🔬','👥','🚀','🏆','🌍'][i]}
+                    {icon}
                   </div>
                 </div>
                 <p className={styles.timelineYear}>{year}</p>

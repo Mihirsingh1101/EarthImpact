@@ -186,6 +186,62 @@ export default function SnowflakeCaresPage() {
         </div>
       </section>
 
+      {/* ===================== PRODUCT CONSTRUCTION ===================== */}
+      <section className={`${styles.construction} section`}>
+        <div className="container">
+          <p className="section-tag" style={{ color: 'var(--forest)' }}>PRODUCT CONSTRUCTION</p>
+          <h2 className={styles.sectionTitle}>How Snowflake is built.</h2>
+          <p className={styles.sectionDesc}>
+            Snowflake uses a layered architecture designed to balance absorbency, safety and end-of-life impact.
+            Each layer is selected for a specific function using materials chosen to avoid identified chemicals of concern.
+          </p>
+          <div className={styles.layerGrid}>
+            {[
+              { num: '01', title: 'Top Sheet', desc: 'Soft, skin-contact layer made from plant-derived fibres. Designed to be gentle and breathable.' },
+              { num: '02', title: 'HemoSan Hydrogel Layer', desc: 'EarthImpact\'s proprietary innovation. A hydrogel formulation designed to improve fluid management and hygiene performance. Details are held confidential to protect IP.' },
+              { num: '03', title: 'Absorbent Core', desc: 'Natural cellulose-based core material for high absorbency without synthetic SAP dependency where possible.' },
+              { num: '04', title: 'Back Sheet', desc: 'Designed to be plastic-free. Provides leakage control without conventional plastic film.' },
+            ].map(({ num, title, desc }) => (
+              <div key={num} className={styles.layerCard}>
+                <div className={styles.layerNum}>{num}</div>
+                <h3 className={styles.layerTitle}>{title}</h3>
+                <p className={styles.layerDesc}>{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===================== DEVELOPMENT STATUS ===================== */}
+      <section className={`${styles.devStatus} section`}>
+        <div className="container">
+          <p className="section-tag" style={{ color: 'var(--forest)' }}>DEVELOPMENT STATUS</p>
+          <h2 className={styles.sectionTitle}>Where we are right now.</h2>
+          <p className={styles.sectionDesc}>
+            EarthImpact is a research and development stage company. We are transparent about where Snowflake sits in its development journey.
+          </p>
+          <div className={styles.stageTrack}>
+            {[
+              { label: 'Research', active: true, done: true },
+              { label: 'Prototype', active: true, done: true },
+              { label: 'Validation', active: true, done: false },
+              { label: 'Certification', active: false, done: false },
+              { label: 'Commercialisation', active: false, done: false },
+            ].map(({ label, active, done }, i) => (
+              <div key={label} className={styles.stageItem}>
+                <div className={`${styles.stageDot} ${done ? styles.stageDone : ''} ${active && !done ? styles.stageCurrent : ''}`}>
+                  {done ? '✓' : i + 1}
+                </div>
+                <p className={`${styles.stageLabel} ${active ? styles.stageLabelActive : ''}`}>{label}</p>
+              </div>
+            ))}
+          </div>
+          <p className={styles.devNote}>
+            ⚠️ Snowflake is not yet commercially available. Performance claims on absorbency, leakage and safety will be published only when supported by independent test evidence.
+          </p>
+        </div>
+      </section>
+
       {/* ===================== WHAT MAKES SNOWFLAKE DIFFERENT ===================== */}
       <section className={styles.different}>
         <div className="container">

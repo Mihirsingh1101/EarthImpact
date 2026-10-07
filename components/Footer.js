@@ -6,12 +6,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.col}>
-          <div className={styles.logoWrap}>
-            <img src="/logo.png" alt="EarthImpact Logo" width="36" height="36" style={{ objectFit: 'contain', borderRadius: '4px' }} />
-            <div>
-              <div className={styles.logoText}>earth<strong>impact.</strong></div>
-              <div className={styles.logoSub}>Innovations Pvt. Ltd.</div>
-            </div>
+          <div className={styles.logoWrap} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '1.5rem' }}>
+            <Link href="/">
+              <img src="/images/logos/earthimpact%20logo/footer%20logo.jpeg" alt="EarthImpact Logo" width="130" height="48" style={{ objectFit: 'contain', borderRadius: '8px' }} />
+            </Link>
+            <div style={{ color: '#c1d1c1', fontSize: '0.85rem', letterSpacing: '0.5px' }}>Innovations Pvt. Ltd.</div>
           </div>
           <p className={styles.tagline}>Building safer, science-backed and sustainable solutions for women and our planet.</p>
           <div className={styles.socials}>
@@ -39,7 +38,6 @@ export default function Footer() {
         <div className={styles.col}>
           <h4 className={styles.colTitle}>Our Solutions</h4>
           <ul className={styles.linkList}>
-            <li><Link href="/snowflake">Snowflake — The Product</Link></li>
             <li><Link href="/snowflake-cares">Snowflake Cares</Link></li>
             <li><Link href="/insights">Insights &amp; Research</Link></li>
             <li><Link href="/contact">Partner with Us</Link></li>

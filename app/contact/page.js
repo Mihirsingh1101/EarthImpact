@@ -197,7 +197,6 @@ export default function ContactPage() {
                   { icon: '💼', label: 'Founder', value: 'soham.srivastava@earthimpact.co.in' },
                   { icon: '📍', label: 'R&D HQ', value: 'TBI, NIT Calicut\nNIT Campus P.O., Kozhikode\nKerala – 673601, India' },
                   { icon: '🏢', label: 'Corporate / Registered HQ', value: 'Swami Vivekanand Puram\nKatai Mill, Banda\nUttar Pradesh – 210001, India' },
-                  { icon: '🌐', label: 'Website', value: 'www.earthimpact.co.in' },
                   { icon: '💼', label: 'Follow EarthImpact', value: 'linkedin.com/company/earthimpact-innovations' },
                   { icon: '💼', label: 'Founder LinkedIn', value: 'linkedin.com/in/namaste-soham' },
                 ].map(({ icon, label, value }) => (
@@ -239,7 +238,6 @@ export default function ContactPage() {
                 <p className={styles.founderName}>Soham Srivastava</p>
                 <p className={styles.founderRole}>Founder &amp; Chief Empathy Officer</p>
                 <p className={styles.founderCompany}>EarthImpact Innovations Pvt. Ltd.</p>
-                <p className={styles.signature}>Soham Srivastava</p>
               </div>
             </div>
           </div>

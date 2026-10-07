@@ -129,14 +129,14 @@
   margin: 0 0 20px;
 }
 
-.lead {
+.articleBody :global(.lead) {
   font-size: 18px !important;
   color: var(--text-dark) !important;
   line-height: 1.7 !important;
   font-weight: 400;
 }
 
-.list {
+.articleBody :global(.list) {
   margin: 0 0 20px 0;
   padding-left: 20px;
   display: flex;
@@ -144,13 +144,13 @@
   gap: 10px;
 }
 
-.list li {
+.articleBody :global(.list) li {
   font-size: 15px;
   color: var(--text-body);
   line-height: 1.65;
 }
 
-.callout {
+.articleBody :global(.callout) {
   background: var(--cream);
   border-left: 4px solid var(--forest);
   border-radius: 0 12px 12px 0;
@@ -161,20 +161,20 @@
   margin: 32px 0;
 }
 
-.calloutIcon {
+.articleBody :global(.calloutIcon) {
   font-size: 22px;
   flex-shrink: 0;
   margin-top: 2px;
 }
 
-.callout p {
+.articleBody :global(.callout) p {
   font-size: 15px !important;
   margin: 0 !important;
   color: var(--text-dark) !important;
 }
 
 /* ── CTA ── */
-.articleCta {
+.articleBody :global(.articleCta) {
   background: var(--forest);
   border-radius: 16px;
   padding: 32px;
@@ -185,7 +185,7 @@
   flex-wrap: wrap;
 }
 
-.ctaText {
+.articleBody :global(.ctaText) {
   flex: 1;
   font-size: 16px !important;
   color: rgba(255,255,255,0.9) !important;
@@ -194,21 +194,21 @@
 }
 
 /* ── Sources ── */
-.sources {
+.articleBody :global(.sources) {
   background: var(--cream);
   border-radius: 16px;
   padding: 28px;
   margin-top: 48px;
 }
 
-.sources h3 {
+.articleBody :global(.sources) h3 {
   font-family: 'DM Serif Display', Georgia, serif;
   font-size: 18px;
   color: var(--text-dark);
   margin: 0 0 16px;
 }
 
-.sourceList {
+.articleBody :global(.sourceList) {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
@@ -216,19 +216,19 @@
   margin: 0 0 16px;
 }
 
-.sourceList li {
+.articleBody :global(.sourceList) li {
   font-size: 13px;
   color: var(--text-body);
   line-height: 1.6;
 }
 
-.sourceList a {
+.articleBody :global(.sourceList) a {
   color: var(--forest);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.disclaimer {
+.articleBody :global(.disclaimer) {
   font-size: 12px !important;
   color: var(--text-muted) !important;
   margin: 0 !important;

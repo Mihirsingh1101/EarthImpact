@@ -7,7 +7,6 @@ import styles from './Navbar.module.css';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Our Story', href: '/our-story' },
-  { label: 'Snowflake', href: '/snowflake' },
   { label: 'Snowflake Cares', href: '/snowflake-cares' },
   { label: 'Ecosystem Support', href: '/ecosystem-support' },
   { label: 'Awards & Media', href: '/awards-media' },
@@ -32,7 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo}>
           <div className={styles.logoIcon}>
-            <img src="/logo.png" alt="EarthImpact Logo" width="64" height="64" style={{ objectFit: 'contain', borderRadius: '4px' }} />
+            <img src="/logo.png" alt="EarthImpact Logo" width="120" height="40" style={{ objectFit: 'contain', borderRadius: '4px' }} />
           </div>
         </Link>
 

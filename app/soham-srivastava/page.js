@@ -20,21 +20,22 @@ export const metadata = {
 };
 
 const milestones = [
-  { year: '2024', icon: '🏛️', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation at AIC-IIIT Kottayam — marking the formal start of the EarthImpact innovation journey.' },
-  { year: '2024–25', icon: '🔬', title: '1.5+ Years of R&D', desc: 'Extensive research and development in non-toxic, biodegradable materials for menstrual care, based at NIT Calicut.' },
-  { year: '2025', icon: '🏆', title: 'Winner — ReFlow Menstrual Health Hackathon', desc: 'Won the ReFlow Menstrual Health Innovation Hackathon. The event was associated with IIT Bhubaneswar Research and Entrepreneurship Park.' },
-  { year: 'Feb 2025', icon: '🚀', title: 'EarthImpact Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. was officially incorporated, turning years of research into a real company.' },
-  { year: '2025', icon: '🤝', title: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur; funding received.' },
+  { year: '2026', icon: '🤝', title: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur; CSR funding received from Pernod Richard India Foundation.' },
+  { year: '2025', icon: '🌱', title: 'UnLtd India Fellow', desc: 'Supported by UnLtd India as a social entrepreneur.' },
+  { year: '2025', icon: '🌍', title: 'GUESSS India Entrepreneur (ProBono)', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur.' },
   { year: '2025', icon: '🏅', title: 'TBI NIT Calicut — NIDHI-PRAYAS', desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.' },
-  { year: '2025', icon: '🌟', title: 'IIM Calcutta Innovation Park — NIDHI-EIR', desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.' },
-  { year: '2025–26', icon: '🌍', title: 'GUESSS India & UnLtd India', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India as a social entrepreneur.' },
+  { year: 'Feb 2025', icon: '🚀', title: 'EarthImpact Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. was officially incorporated, turning years of research into a real company.' },
+  { year: '2025', icon: '🏆', title: 'Winner — ReFlow Menstrual Health Hackathon', desc: 'Won the ReFlow Menstrual Health Innovation Hackathon. The event was associated with IIT Bhubaneswar Research and Entrepreneurship Park.' },
+  { year: '2024-present', icon: '🔬', title: '2+ Years of R&D', desc: 'Extensive research and development in non-toxic, biodegradable materials for menstrual care, based at NIT Calicut.' },
+  { year: '2024', icon: '🌟', title: 'IIMCIP: NIDHI EIR', desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.' },
+  { year: '2024', icon: '🏛️', title: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation at AIC-IIIT Kottayam — marking the formal start of the EarthImpact innovation journey.' },
 ];
 
 const ecosystemLinks = [
   { name: 'AIC-IIIT Kottayam', role: 'Pre-incubated by (2024)', logo: '/images/logos/incubators/aic.jpeg' },
-  { name: 'SIIC IIT Kanpur', role: 'Selected under Advaya 2.0; funding received', logo: '/images/logos/incubators/aic.jpeg' },
-  { name: 'TBI NIT Calicut', role: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: '/images/logos/incubators/stpi.webp' },
-  { name: 'IIM Calcutta Innovation Park', role: 'NIDHI-EIR support', logo: '/images/logos/incubators/stpi.webp' },
+  { name: 'SIIC IIT Kanpur', role: 'Selected under Advaya 2.0; CSR funding received from Pernod Richard India Foundation', logo: '/images/logos/incubators/siic-iit kanpur.webp' },
+  { name: 'TBI NIT Calicut', role: 'Incubation & R&D Support — NIDHI-PRAYAS', logo: '/images/logos/incubators/tbi nitc logo.jpeg' },
+  { name: 'IIM Calcutta Innovation Park', role: 'NIDHI-EIR support', logo: '/images/logos/incubators/iimcip logo.jpeg' },
   { name: 'STPI Bhubaneswar', role: 'Technology Ecosystem Support', logo: '/images/logos/incubators/stpi.webp' },
   { name: 'UnLtd India', role: 'Social Enterprise Support', logo: '/images/logos/incubators/unltd.jpg' },
 ];

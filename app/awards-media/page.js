@@ -48,29 +48,29 @@ const recognitions = [
     badge: 'FOUNDER RECOGNITION',
     desc: 'Soham Srivastava featured on the 30 Under 30 cover page.',
     year: '2025',
-    logo: 'yourstory.webp',
+    logo: '/images/logos/media/yourstory.webp',
     hoverImage: 'Soham 30 under 30 cover page.jpg'
   },
   {
     name: 'SIIC IIT Kanpur — Advaya 2.0',
     badge: 'PROGRAMME SELECTION',
-    desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur. Funding received through the programme.',
-    year: '2025',
-    logo: 'aic.jpeg'
+    desc: 'Selected under Advaya 2.0 by SIIC IIT Kanpur. CSR funding received from Pernod Richard India Foundation.',
+    year: '2026',
+    logo: 'siic-iit kanpur.webp'
   },
   {
     name: 'TBI NIT Calicut — NIDHI-PRAYAS',
     badge: 'GOVERNMENT-BACKED INNOVATION SUPPORT',
     desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.',
     year: '2025',
-    logo: 'stpi.webp'
+    logo: 'tbi nitc logo.jpeg'
   },
   {
     name: 'IIM Calcutta Innovation Park — NIDHI-EIR',
     badge: 'INNOVATION SUPPORT',
     desc: 'Received NIDHI-EIR support through IIM Calcutta Innovation Park.',
-    year: '2025',
-    logo: 'stpi.webp'
+    year: '2024',
+    logo: 'iimcip logo.jpeg'
   },
   {
     name: 'STPI Bhubaneswar',
@@ -85,16 +85,7 @@ const mediaMentions = [
   { outlet: 'YOURSTORY', type: 'Featured Story', headline: 'How EarthImpact is making menstrual care safe, non-toxic and sustainable.', date: 'May 2025', logo: 'yourstory.webp' },
 ];
 
-const milestones = [
-  { year: '2024', event: 'Pre-incubated by AIC-IIIT Kottayam', desc: 'First pre-incubation. Began the formal EarthImpact innovation journey.', icon: '🚀' },
-  { year: '2024–25', event: 'Research & Development', desc: 'Deep research in non-toxic, biodegradable materials and early prototyping.', icon: '🔬' },
-  { year: 'Feb 2025', event: 'Company Incorporated', desc: 'EarthImpact Innovations Pvt. Ltd. officially incorporated.', icon: '🏛️' },
-  { year: '2025', event: 'Winner — ReFlow Menstrual Health Hackathon', desc: 'Won the ReFlow Menstrual Health Innovation Hackathon.', icon: '🏆' },
-  { year: '2025', event: 'SIIC IIT Kanpur — Advaya 2.0', desc: 'Selected under Advaya 2.0; funding received.', icon: '🎯' },
-  { year: '2025', event: 'TBI NIT Calicut — NIDHI-PRAYAS', desc: 'Received NIDHI-PRAYAS support through TBI NIT Calicut.', icon: '🤝' },
-  { year: '2025', event: 'IIM Calcutta Innovation Park — NIDHI-EIR', desc: 'Received NIDHI-EIR support.', icon: '🏅' },
-  { year: '2025–26', event: 'GUESSS India & UnLtd India', desc: 'Soham Srivastava recognised as GUESSS India Entrepreneur. Supported by UnLtd India.', icon: '🌍' },
-];
+
 
 export default function AwardsMediaPage() {
   return (
@@ -142,7 +133,7 @@ export default function AwardsMediaPage() {
               <div key={name} className={styles.recCard}>
                 <div className={styles.recCardInner}>
                   <div className={styles.recCardTop}>
-                    <img src={`/images/logos/incubators/${logo}`} alt={name} className={styles.recImg} />
+                    <img src={logo.startsWith('/') ? logo : `/images/logos/incubators/${logo}`} alt={name} className={styles.recImg} />
                   </div>
                   <p className={styles.recName}>{name}</p>
                   <span className={styles.recBadge}>{badge}</span>
@@ -186,25 +177,7 @@ export default function AwardsMediaPage() {
         </div>
       </section>
 
-      {/* ===================== MILESTONES ===================== */}
-      <section className={styles.milestones}>
-        <div className="container">
-          <p className={styles.milestoneTag}>OUR MILESTONES, OUR MOTIVATION</p>
-          <div className={styles.milestoneTrack}>
-            <div className={styles.milestoneLine}></div>
-            {milestones.map(({ year, event, desc, icon }, i) => (
-              <div key={i} className={styles.milestoneItem}>
-                <div className={styles.milestoneDot}>
-                  <span className={styles.milestoneIcon}>{icon}</span>
-                </div>
-                <p className={styles.milestoneYear}>{year}</p>
-                <h3 className={styles.milestoneEvent}>{event}</h3>
-                <p className={styles.milestoneDesc}>{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ===================== QUOTE BANNER ===================== */}
       <section className={styles.quoteBanner}>
