@@ -40,7 +40,7 @@ const recognitions = [
     badge: 'RECOGNITION',
     desc: 'Awarded by Dr. Mukta, Head of Department of Gynaecology, AIIMS Patna.',
     year: '2024',
-    logo: 'aic.jpeg', // Fallback incubator/logo 
+    logo: 'aiimspatna.webp', 
     hoverImage: 'Awarded by Dr. Mukta AIIMS Patna HOD Gynae Dept..JPG.jpeg'
   },
   {
@@ -48,7 +48,7 @@ const recognitions = [
     badge: 'FOUNDER RECOGNITION',
     desc: 'Soham Srivastava featured on the 30 Under 30 cover page.',
     year: '2025',
-    logo: '/images/logos/media/yourstory.webp',
+    logo: '30U30.png',
     hoverImage: 'Soham 30 under 30 cover page.jpg'
   },
   {
