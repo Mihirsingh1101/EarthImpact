@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.col}>
           <div className={styles.logoWrap} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '1.5rem' }}>
             <Link href="/">
-              <img src="/images/logos/earthimpact%20logo/footer%20logo.jpeg" alt="EarthImpact Logo" width="130" height="48" style={{ objectFit: 'contain', borderRadius: '8px' }} />
+              <img src="/images/logos/earthimpact%20logo/EarthImpact%20logo.png" alt="EarthImpact Logo" width="100" height="36" style={{ objectFit: 'contain', borderRadius: '8px' }} />
             </Link>
             <div style={{ color: '#c1d1c1', fontSize: '0.85rem', letterSpacing: '0.5px' }}>Innovations Pvt. Ltd.</div>
           </div>

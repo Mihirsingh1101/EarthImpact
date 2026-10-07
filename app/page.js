@@ -33,42 +33,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero center image area */}
-        <div className={styles.heroCenter}>
+        {/* Hero right composite image */}
+        <div className={styles.heroRight}>
           <img
-            src="/images/products/pad-product.png"
-            alt="Snowflake biodegradable sanitary pad with natural leaves"
-            className={styles.heroPadImg}
+            src="/images/products/EarthImpact%20Snowflake%20product%20packaging.png"
+            alt="Snowflake biodegradable sanitary pad packaging"
+            className={styles.heroRightImg}
           />
-        </div>
-
-        {/* Snowflake Card */}
-        <div className={styles.snowflakeCard}>
-          <div className={styles.snowflakeLogo}>
-            <span className={styles.snowflakeScript}>snowflake.</span>
-            <span className={styles.snowflakeSub}>CARE THAT UNDERSTANDS</span>
-          </div>
-          <ul className={styles.snowflakeFeatures}>
-            <li>
-              <span className={styles.sfIcon}>♻</span>
-              Non-Toxic &amp; Safe
-            </li>
-            <li>
-              <span className={styles.sfIcon}>♻</span>
-              Plastic-Free
-            </li>
-            <li>
-              <span className={styles.sfIcon}>♻</span>
-              Biodegradable
-            </li>
-            <li>
-              <span className={styles.sfIcon}>♻</span>
-              Better for You, Better for Earth
-            </li>
-          </ul>
-          <Link href="/snowflake" className={styles.snowflakeBtn}>
-            Explore Snowflake →
-          </Link>
         </div>
       </section>
 

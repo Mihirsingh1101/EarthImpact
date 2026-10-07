@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo}>
           <div className={styles.logoIcon}>
-            <img src="/logo.png" alt="EarthImpact Logo" width="120" height="40" style={{ objectFit: 'contain', borderRadius: '4px' }} />
+            <img src="/logo.png" alt="EarthImpact Logo" width="100" height="32" style={{ objectFit: 'contain', borderRadius: '4px' }} />
           </div>
         </Link>
 
